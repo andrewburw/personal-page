@@ -1,0 +1,14 @@
+
+
+.bg-main {
+    background-image: url("img/bg-main.jpg");
+    height: 500px;
+    background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+main  {
+  margin-top: 3rem;
+}
