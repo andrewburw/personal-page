@@ -9,6 +9,12 @@
 
 }
 
-main  {
-  margin-top: 3rem;
+.test {
+
+  background-color: #363636;
+}
+
+.text_color_cutome {
+
+  color: white;
 }
