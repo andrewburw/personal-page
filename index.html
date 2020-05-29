@@ -65,11 +65,17 @@
     </div>
   </div>
 </section>
+
+
+
+
+<!-- about me -->
 <section class="section">
 
-  <!-- about me -->
+
+
     <div class="container">
-      <section class="section">
+       <section class="section">
          <div class="container">
            <h1 class="title">About me</h1>
            <h2 class="subtitle">
@@ -124,6 +130,7 @@
     </div>
   </section>
 </div>
+
 
 <!-- Interests -->
 <section class="section test">
@@ -201,15 +208,27 @@
  </div>
 </section>
 
-
+<!-- sclizz -->
 <section class="section">
    <div class="container">
      <h1 class="title">My skilz</h1>
      <h2 class="subtitle">
        Few words about my self <strong>sections</strong>, like the one you're currently reading
      </h2>
+ <div class="tile is-ancestor">
+     <div class="tile is-parent ">
+      <article class="tile is-child box">
+        <p class="title is-4">One</p>
+        <p class="subtitle">js </p>
+        <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat ultrices diam nec pulvinar.
+          . </p>
+      </article>
 
-
+     </div>
+     <div class="tile is-parent is-8">
+      <article class="tile is-child box">
+        <p class="title is-4">Two</p>
+        <p class="subtitle">Subtitle</p>
 
 
    <div class="columns">
@@ -225,10 +244,130 @@
 <div class="column "><progress class="progress is-primary" value="15" max="100">15%</progress></div>
 </div>
 
+<div class="columns">
+<div class="column is-one-fifth">TEST</div>
+<div class="column "><progress class="progress is-primary" value="15" max="100">15%</progress></div>
+</div>
+<div class="level level-right">
+<button class="button">View more...</button>
+</div>
+</div>
+</article>
+</div>
 </div>
 </section>
- </div>
-    </div>
+
+<section class="section">
+   <div class="container">
+     <h1 class="title">My Experience</h1>
+     <h2 class="subtitle">
+       Few words about my self <strong>sections</strong>, like the one you're currently reading
+     </h2>
+
+     <div class="tile is-ancestor">
+     <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title is-4">One</p>
+        <p class="subtitle">js </p>
+        <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat ultrices diam nec pulvinar.
+          . </p>
+      </article>
+     </div>
+     <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title is-4">Two</p>
+        <p class="subtitle">Subtitle</p>
+      </article>
+     </div>
+     <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title is-4">Three</p>
+        <p class="subtitle">Subtitle</p>
+      </article>
+     </div>
+
+
+     </div>
+
+     <div class="tile is-ancestor">
+     <div class="tile is-parent">
+     <article class="tile is-child box">
+     <p class="title is-4">One</p>
+     <p class="subtitle">js</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat ultrices diam nec pulvinar. Pellentesque congue metus sit amet fringilla molestie.
+        Vestibul </p>
+     </article>
+     </div>
+     <div class="tile is-parent">
+     <article class="tile is-child box">
+     <p class="title is-4">Two</p>
+     <p class="subtitle">Subtitle</p>
+     </article>
+     </div>
+     <div class="tile is-parent">
+     <article class="tile is-child box">
+     <p class="title is-4">Three</p>
+     <p class="subtitle">Subtitle</p>
+     </article>
+     </div>
+
+
+     </div>
+</div>
+</section>
+
+
+<!-- art galery -->
+<!-- https://codepen.io/marcosdg-com/pen/XPMpxv -->
+<section class="section test">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <img src="img/lightBox/photo1.jpg" onclick="viewImage()">
+                    <img src="img/lightBox/photo2.jpg" onclick="viewImage()">
+                </div>
+                <div class="column">
+                    <img src="img/lightBox/photo3.jpg" onclick="viewImage()">
+                    <img src="img/lightBox/photo4.jpg" onclick="viewImage()">
+                </div>
+                <div class="column">
+                    <img src="img/lightBox/photo5.jpg" onclick="viewImage()">
+                    <img src="img/lightBox/photo6.jpg" onclick="viewImage()">
+                </div>
+            </div>
+
+            <div class="modal container-fluid" id="myModal" >
+                <div class="modal-content is-vcentered">
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x1000/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x600/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x900/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x550/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x650/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x700/?nature,water">
+                  </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <button onclick="closeModal()" class="modal-close modal-close-custome is-large" aria-label="close"></button>
+            </div>
+        </div>
+    </section>
+
+
+
 
 
 </main>
@@ -242,6 +381,6 @@
 
 
 
-
+  <script src="main.js"></script>
   </body>
 </html>
