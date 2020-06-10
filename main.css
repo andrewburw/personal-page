@@ -13,15 +13,40 @@ main {
 }
 
 .test {
-
   background-color: #363636;
+  position: relative;
 }
 
 .text_color_cutome {
-
   color: white;
 }
 
+.artGalery_font1 {
+  color:white;
+  font-size: 15vw;
+}
+
+.artGalery_font2 {
+  padding-left: 25vw;
+}
+
+
+
+.art_galery_div_box{
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.visible {
+  display: block;
+}
+.hidden{
+  display: none;
+}
 
 .item-slide {
   box-sizing: border-box;
@@ -111,6 +136,8 @@ background-color: rgba(0,0,0,0.5);
 .column img{
   margin-top: 20px;
   object-fit: scale-down;
+
+
 }
 
 .modal-close-custome {
