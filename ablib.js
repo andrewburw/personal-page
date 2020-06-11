@@ -50,6 +50,27 @@ Constructor.prototype.hide = function () {
  			this.elems[0].classList.add('hidden');
 
  			};
+
+Constructor.prototype.show = function (all) {
+
+      if (all === 'all') {
+
+				for (i = 0; i < this.elems.length; i++){
+
+								this.elems[i].classList.remove('hidden');
+
+
+						}
+      } else {
+
+				this.elems[0].classList.remove('hidden');
+				this.elems[0].classList.add('visible');
+
+			}
+
+
+
+			 			};
   let instantiate = function (selector) {
   		return new Constructor(selector);
   	};

@@ -24,13 +24,18 @@ main {
 .artGalery_font1 {
   color:white;
   font-size: 15vw;
+
 }
 
 .artGalery_font2 {
   padding-left: 25vw;
 }
 
+.artGalery_font1:hover{
+   cursor: pointer;
 
+
+}
 
 .art_galery_div_box{
   background-color: black;
@@ -142,5 +147,20 @@ background-color: rgba(0,0,0,0.5);
 
 .modal-close-custome {
       top: 3rem;
+}
+
+#tree_main {
+  height: 250px;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    background-image: url("img/trees.png");
+}
+
+
+
+.icons_in_bottom {
+   margin-right: 2vw;
 
 }

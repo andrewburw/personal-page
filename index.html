@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Adrew personal page!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -325,26 +325,38 @@
 <section class="section test">
 
 
-  <!--  <h1 style="color:white; z-index:111; position:relative;">Galery</h1> -->
+
         <div class="container">
           <div class="art_galery_div_box">
            <h1 class="artGalery_font1">Artwork</h1>
            <h1 class="artGalery_font1 artGalery_font2">Galery</h1>
+
           </div>
 
 
     <div class="columns">
-                <div class="column">
-                    <img src="img/lightBox/photo1.jpg" onclick="viewImage()">
-                    <img src="img/lightBox/photo2.jpg" onclick="viewImage()">
+                <div id="tester" class="column ">
+                    <img src="img/lightBox/photo1.jpg" onclick="viewImage()" />
+                    <img src="img/lightBox/photo2.jpg" onclick="viewImage()" />
+                    <img class="hidden artGColumn" src="img/lightBox/photo2.jpg" onclick="viewImage()" />
+                    <img class="hidden artGColumn" src="img/lightBox/photo2.jpg" onclick="viewImage()" />
+                    <img class="hidden artGColumn" src="img/lightBox/photo2.jpg" onclick="viewImage()" />
                 </div>
-                <div class="column">
+                <div id="tester2" class="column">
                     <img src="img/lightBox/photo3.jpg" onclick="viewImage()">
                     <img src="img/lightBox/photo4.jpg" onclick="viewImage()">
+                      <img class="hidden artGColumn" src="img/lightBox/photo4.jpg" onclick="viewImage()">
+                        <img class="hidden artGColumn" src="img/lightBox/photo5.jpg" onclick="viewImage()">
+                          <img class="hidden artGColumn" src="img/lightBox/photo1.jpg" onclick="viewImage()">
+
                 </div>
                 <div class="column">
                     <img src="img/lightBox/photo5.jpg" onclick="viewImage()">
                     <img src="img/lightBox/photo6.jpg" onclick="viewImage()">
+                    <img class="hidden artGColumn" src="img/lightBox/photo1.jpg" onclick="viewImage()">
+                    <img class="hidden artGColumn" src="img/lightBox/photo6.jpg" onclick="viewImage()">
+                    <img class="hidden artGColumn" src="img/lightBox/photo3.jpg" onclick="viewImage()">
+
                 </div>
             </div>
 
@@ -377,13 +389,93 @@
             </div>
 
 </div>
+  <div id="buttonViewGalery" class="has-text-centered">
+    <button id="showArtGallery" class="button">View more..</button>
+  </div>
+
     </section>
+  <br />
+    <section id="tree_main"class="hero  is-bold">
+
+      <div  class="hero-body">
+        <div class="container has-text-centered ">
+          <h1 class="title is-size-1">
+            Primary bold title
+          </h1>
+          <h2 class="subtitle is-size-6">
+            Primary bold subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
+<!--bottom about -->
+    <section>
+      <br />
+    <div  class="container">
+      <div class="columns">
+    <div  class="column is-half">
+  <img src="/img/ab_logo.png"  width="250vw" alt="ab_logo" />
+
+
+    <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ,
+      aliquip ex ea commodo consequat.</p>
+  <br />
+      <span class="title is-5"> Contacts </span>
+      <div class="" style="margin-top: 3vw">
+        <span class="icon icons_in_bottom">
+        <i class="fab fa-facebook-f fa-3x"></i>
+        </span>
+        <span class="icon icons_in_bottom">
+      <i class="fas fa-envelope fa-3x"></i>
+        </span>
+        <span class="icon icons_in_bottom">
+        <i class="fab fa-twitter fa-3x"></i>
+        </span>
+        <span class="icon icons_in_bottom">
+        <i class="fab fa-linkedin-in fa-3x"></i>
+        </span>
+        <span class="icon icons_in_bottom">
+        <i class="fab fa-github-square fa-3x"></i>
+        </span>
+      </div>
+
+    </div>
 
 
 
 
 
 
+
+    <div class="column"> <img src="/img/pattern.png" width="2000vw"alt="andrey pattern" /></div>
+
+  </div>
+    </div>
+    </section>
+     <hr />
+<!--bottom navbar -->
+    <div id="navbarBasicExample" class="navbar">
+      <span class="navbar-item">COPYRIGHT Andrew Burw ® ALL RIGHT RESERVED</span>
+      <div class="navbar-end">
+        <a class="navbar-item"> Home </a>
+
+        <a class="navbar-item"> About </a>
+
+        <a class="navbar-item"> Portfolio </a>
+
+        <a class="navbar-item"> Art </a>
+
+
+      </div>
+    </div>
+ <section class="test">
+   <div class="has-text-centered">
+     <h1>test</h1>
+   </div>
+
+ </section>
 </main>
 
 
