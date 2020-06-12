@@ -1,7 +1,6 @@
 
 
 
-
 // ******** ART GALERY *************************
 $('.artGalery_font1').onClick(()=>{
 

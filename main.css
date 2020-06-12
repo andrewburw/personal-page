@@ -57,11 +57,22 @@ main {
   box-sizing: border-box;
 }
 
+.abmodal {
+
+}
+.abmodal.open .modal_custome,
+.abmodal.open .modal-content {
+
+z-index: 1000;
+opacity: 1;
+}
+
 /* The Modal (background) */
-.modal {
-  display: none;
+.modal_custome {
+opacity: 0;
+z-index: -1;
 position: fixed;
-z-index: 1;
+
 left: 0;
 top: 0;
 width: 100%;
@@ -83,19 +94,8 @@ background-color: rgba(0,0,0,0.5);
 
 }
 
-.item-slide img {
 
 
-
-}
-/*
-.modal img {
-  height: 100vh;
-}
-*/
-.item-slide{
-  display: none;
-}
 
 /* Next & previous buttons */
 .prev,
