@@ -21,10 +21,9 @@ Constructor.prototype.hide = function() {
 Constructor.prototype.removeElement = function() {
 
 
-this.elems[0] || this.elems[0].remove() // avoid error if removeElemet called multyply times
+this.elems[0] || this.elems[0].remove() // avoid error if removeElemets called multiply times
 
 };
-
 
 Constructor.prototype.insertNode = function(htm) {
 
