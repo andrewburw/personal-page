@@ -3,13 +3,14 @@ main {
 
   top: 3rem;
 }
+
 .bg-main {
     background-image: url("img/bg-main.jpg");
     height: 500px;
     background-position: 50% 40%;
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-color: #fff;
 }
 
 .test {

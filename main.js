@@ -1,17 +1,49 @@
+//******************************************
+// There is no Jquery framework. I's my own ablib.js framework :)
 
+//**********************************************
+// *************** ART GALERY ******************
+//**********************************************
 
+  let tet = false
 
-// ******** ART GALERY *************************
-$('.artGalery_font1').onClick(()=>{
+   tet || console.log('srabotal');
+
+$('.artGalery_font1').onClick(() => {
 
   $('.art_galery_div_box').hide();
 
 });
 
-$('#showArtGallery').onClick(()=>{
+$('#showArtGallery').onClick(() => {
   $('.art_galery_div_box').hide();
-$(".artGColumn").show('all')
+  $(".artGColumn").show('all')
 
 });
 
-//stoped on: add button changer show/hide button + add ablib add element
+function viewImage(imageSR) {
+
+  galModal.open()
+
+  $(".item-slide").insertHTM(`<img id='tempImg'src=${imageSR.src}>`);
+
+}
+
+function moveImage(way) {
+
+
+
+  if (way === 'next') {
+   //$('#tempImg').removeElement()
+
+   console.log('next');
+
+
+  } else {
+
+  console.log('back');
+
+
+
+  }
+}
