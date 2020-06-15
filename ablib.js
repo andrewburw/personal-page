@@ -13,26 +13,16 @@ Constructor.prototype.onClick = function (callBack) {
 };
 
 Constructor.prototype.hide = function() {
+	//if css file contains hide/show rules
   this.elems[0].classList.remove('visible');
   this.elems[0].classList.add('hidden');
 
 };
 
-Constructor.prototype.removeElement = function() {
-
-
-this.elems[0] || this.elems[0].remove() // avoid error if removeElemets called multiply times
-
-};
 
 Constructor.prototype.insertNode = function(htm) {
 
   this.elems[0].appendChild(htm)
-};
-
-Constructor.prototype.insertHTM = function(htm) {
-
-  this.elems[0].insertAdjacentHTML('afterbegin',htm)
 };
 
 

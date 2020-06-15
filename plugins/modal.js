@@ -1,20 +1,18 @@
 const pL = {}
 
 function _createModal(options){
-   console.log(options);
+
      const modal = document.createElement('div');
      modal.classList.add('abmodal');
      modal.insertAdjacentHTML('afterbegin',`
-     <div class="modal_custome" id='artGaleryModa' onclick="galModal.close()">
+     <div class="modal_custome" id='artGaleryModa' data-close='true'>
                   <div class="modal-content is-vcentered">
-                    <div class="item-slide">
-                      ${options.img}
+                    <div class="item-slide" data-content>
                     </div>
-
                   </div>
                   <a class="prev" onclick="moveImage('prev')">&#10094;</a>
                   <a class="next" onclick="moveImage('next')">&#10095;</a>
-                <button onclick="galModal.close()" class="modal-close is-large" aria-label="close"></button>
+                <span class="modal-close" data-close='true'>&times</span>
               </div>
      `)
 
@@ -24,36 +22,32 @@ return modal;
 
 }
 
-let mdalOptions  = {
 
-   img: '<p>test</p>'
-
-}
-
+//--------------------------------------------------
 pL.modalArtGalery = function(options){
 
+const $modal = _createModal(options);
+const modal = {
+  open() {
+    $modal.classList.add('open')
+  },
+  close() {
+    $modal.classList.remove('open')
 
-  const $modal = _createModal(options);
 
- return {
-   open(){
-     $modal.classList.add('open')
-
-
-   },
-   close(){
-    
-     $modal.classList.remove('open')
-     $('#tempImg').removeElement() // removing temp IMG from modal
-
-   },
-   destroy(){
-
-       $('#artGaleryModa').removeElement()
-
-   }
-
- }
+  },
+  setContent(html) {
+    $modal.querySelector('[data-content]').innerHTML = html
+  }
 }
 
-const galModal = pL.modalArtGalery( mdalOptions)
+$modal.addEventListener('click', event => {
+  if (event.target.dataset.close) {
+    modal.close()
+  }
+})
+
+ return modal;
+}
+
+const galModal = pL.modalArtGalery()
