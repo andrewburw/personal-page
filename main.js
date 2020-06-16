@@ -7,19 +7,30 @@
 
 
 $('.artGalery_font1').onClick(() => {
-
+   // hide big shrift "Art gallery"
   $('.art_galery_div_box').hide();
 
 });
 
 $('#showArtGallery').onClick(() => {
-  $('.art_galery_div_box').hide();
-  $(".artGColumn").show('all')
-
+  // button presed show gallery
+   $('.art_galery_div_box').hide();
+   $(".artGColumn").show();
+   $("#showArtGallery").hide();
+   $("#hideArtGallery").show();
 });
 
-let img_now_view = 0;
-let IMAGE_IN_GALERY = 3;
+$('#hideArtGallery').onClick(() => {
+  // button presed hide gallery
+   $('.art_galery_div_box').show();
+   $(".artGColumn").hide()
+   $("#showArtGallery").show();
+   $("#hideArtGallery").hide();
+});
+
+
+let img_now_view = 0  ;
+let IMAGE_IN_GALERY = 6;
 
 function viewImage(imageSR) {
 
@@ -33,11 +44,59 @@ function viewImage(imageSR) {
 
 function moveImage(way) {
 
-if ( img_now_view > 0  && img_now_view < IMAGE_IN_GALERY) { // not working yet
-    way === 'next' ? img_now_view++ : img_now_view--;
+  if (img_now_view >= IMAGE_IN_GALERY) {
+    img_now_view = 0;
+  }
+
+  if (img_now_view < 0) {
+    img_now_view = IMAGE_IN_GALERY;
+  }
+
+way === 'next' ? img_now_view++ : img_now_view--;
+
+let test = $(`#image_${img_now_view}`).elems[0].src
+galModal.setContent(`<img  src=${test} />`)
+
+}
+//**********************************************
+// *************** My Experience ***************
+//**********************************************
+
+
+function showMyWork(){
+
+contModal.open()
+
+
 }
 
-   let test = $(`#image_${img_now_view}`).elems[0].src
- galModal.setContent(`<img  src=${test} />`)
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// test
