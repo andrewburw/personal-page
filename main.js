@@ -29,7 +29,7 @@ $('#hideArtGallery').onClick(() => {
 });
 
 
-let img_now_view = 0  ;
+let img_now_view = 1  ;
 let IMAGE_IN_GALERY = 6;
 
 function viewImage(imageSR) {
@@ -43,16 +43,17 @@ function viewImage(imageSR) {
 }
 
 function moveImage(way) {
+way === 'next' ? img_now_view++ : img_now_view--;
 
   if (img_now_view >= IMAGE_IN_GALERY) {
-    img_now_view = 0;
+    img_now_view = 1;
   }
 
-  if (img_now_view < 0) {
+  if (img_now_view  < 1  ) {
     img_now_view = IMAGE_IN_GALERY;
   }
 
-way === 'next' ? img_now_view++ : img_now_view--;
+
 
 let test = $(`#image_${img_now_view}`).elems[0].src
 galModal.setContent(`<img  src=${test} />`)
@@ -61,15 +62,36 @@ galModal.setContent(`<img  src=${test} />`)
 //**********************************************
 // *************** My Experience ***************
 //**********************************************
+const optionsMyExper = {
+      guitTeacher: {
+           modalTitle: 'Web Project',
+           projectName: 'Guitar Teacher',
+           pictSRC: 'test',
+           projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
+           technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
+           links: {
+             github: 'www.github.com',
+             projectSite: 'www.github.com'
+           },
+           buttons: {
+             visitSite: 'www.github.com'
+           }
 
 
-function showMyWork(){
+      }
 
-contModal.open()
+
+
 
 
 }
 
+function showMyWork(){
+
+contModal.open()
+contModal.setContent(optionsMyExper.guitTeacher)
+
+}
 
 
 
