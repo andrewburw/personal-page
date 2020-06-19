@@ -1,6 +1,8 @@
 //******************************************
 // There is no Jquery framework. I's my own ablib.js framework :)
 
+
+
 //**********************************************
 // *************** ART GALERY ******************
 //**********************************************
@@ -62,40 +64,151 @@ galModal.setContent(`<img  src=${test} />`)
 //**********************************************
 // *************** My Experience ***************
 //**********************************************
-const optionsMyExper = {
+const modalTamplate = {
+     myWebWorks: `
+     <div class="content">
+       <h1 data-projecttitle></h1>
+       <div class="level-item has-text-centered">
+       <figure class="image  is-128x128">
+<img src="https://bulma.io/images/placeholders/128x128.png" / >
+</figure>
+</div>
+       <div data-projectDescription></div>
+       <h2>Technology Stack</h2>
+       <div data-technologyDescription></div>
+       <div data-technologyList></div>
+       <h3>Description of the creation process</h3>
+       <div data-creationDescription></div>
+       <br />
+         <div class='columns' data-projectdone></div>
+       <h4>Links</h4>
+       <div data-links></div>
+     </div>
+
+     `,
+   mySkilz: `<div class='content'>
+     <h1 data-projecttitle></h1>
+     <div data-projectDescription></div>
+     <div data-maincontent>
+     <br />
+     <div class='table-container'>
+     <table class="table ">
+  <thead>
+    <tr>
+      <th><abbr>Skill</abbr></th>
+      <th><abbr>Сompetence Precentage</abbr></th>
+      <th><abbr>Coment</abbr></th>
+    </tr>
+  </thead>
+  <tbody data-tablecontent>
+  </tbody>
+  </table>
+  </div>
+   </div>
+        </div>
+`
+
+
+
+};
+const contentMyExper = {
       guitTeacher: {
            modalTitle: 'Web Project',
            projectName: 'Guitar Teacher',
            pictSRC: 'test',
-           projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
+           projectDescription: 'TESTLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
+           technologyDescription:'TESTLorem ipsum dolor sit amet,eque TESTLorem ipsum dolor sit amet, consectetur adipiscing TESTLorem ipsum dolor sit amet, consectetur adipiscing',
            technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
-           links: {
-             github: 'www.github.com',
-             projectSite: 'www.github.com'
-           },
-           buttons: {
-             visitSite: 'www.github.com'
-           }
+           creationDescription:`Creation Lorem ipsum dolor sit amet,eque <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
+           TESTLorem ipsum dolor sit amet, consectetur adipiscing TESTLorem ipsum dolor sit amet, consectetur adipiscing
+          ante lacus, malesuada ac auctor vitae, congue . Phasellus lacus ex, semper ac tortor nec, fringil
+            ante lacus, malesuada ac auctor vitae, congue . Phasellus lacus ex, semper ac tortor nec, fringil
 
+           `,
+           links: {
+             github: 'https://www.github.com',
+             projectSite: 'https://www.github.com'
+           },
+           progress: 16
 
       }
 
 
+};
 
-
-
-}
 
 function showMyWork(){
 
-contModal.open()
-contModal.setContent(optionsMyExper.guitTeacher)
+contModal.open();
+contModal.setTamplate(modalTamplate.myWebWorks);
+contModal.setContent(contentMyExper.guitTeacher,'myWorks');
+
+}
+
+//**********************************************
+// *************** My Skilzz ***************
+//**********************************************
+const contentMySkilzz = {
+  mySkilzz: {
+      modalTitle: 'My Skilz',
+      projectName: 'My Skilz Description',
+      projectDescription: 'TESTLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
+      skilzData: {
+        JavaScript: {
+          precentage: 50,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l',
+          color: 'is-warning'
+        },
+        Html: {
+          precentage: 60,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l  ',
+          color: 'is-danger'
+        },
+        Css: {
+          precentage: 72,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l',
+          color: 'is-info' 
+        },
+        FrameWorks: {
+          precentage: 72,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+        },
+        Excel: {
+          precentage: 72,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+        },
+        PostGress: {
+          precentage: 72,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+        },Post1: {
+          precentage: 72,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+        },Post2: {
+          precentage: 72,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+        },Post4: {
+          precentage: 72,
+          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+        }
+      }
+
+  }
+
 
 }
 
 
 
+function showMySkilz(){
 
+contModal.open();
+contModal.setTamplate(modalTamplate.mySkilz);
+contModal.setContent(contentMySkilzz.mySkilzz);
+
+}
+
+
+showMySkilz()
 
 
 
