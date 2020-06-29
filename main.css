@@ -92,6 +92,7 @@ background-color: rgba(0,0,0,0.5);
 
     top: 1rem;
     max-width: 1200px;
+  /*  width: 1000px;*/
     max-height: 800px;
     overflow: hidden;
     text-align: center;

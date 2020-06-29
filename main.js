@@ -92,7 +92,7 @@ const modalTamplate = {
      <div data-maincontent>
      <br />
      <div class='table-container'>
-     <table class="table ">
+     <table class="table">
   <thead>
     <tr>
       <th><abbr>Skill</abbr></th>
@@ -155,40 +155,72 @@ const contentMySkilzz = {
       projectDescription: 'TESTLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
       skilzData: {
         JavaScript: {
-          precentage: 50,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l',
+          precentage: 60,
+          description: 'My main programming language.',
           color: 'is-warning'
         },
+
         Html: {
-          precentage: 60,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l  ',
+          precentage: 80,
+          description: '',
           color: 'is-danger'
         },
         Css: {
-          precentage: 72,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l',
-          color: 'is-info' 
+          precentage: 50,
+          description: '',
+          color: 'is-info'
+        },
+        MongoDB: {
+          precentage: 10,
+          description: 'My main DB.Need more practice.',
+          color: 'is-primary'
+        },
+        NodeJS: {
+          precentage: 10,
+          description: 'My main programming backend language.Need more practice.',
+          color: 'is-success'
+        },
+        ReactJS: {
+          precentage: 60,
+          description: 'My favorite UI framework.',
+          color: 'is-info'
+        },
+        Git: {
+          precentage: 10,
+          description: 'Need more practice to work in team and large projects.',
+          color: 'is-black'
         },
         FrameWorks: {
-          precentage: 72,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+          precentage: 80,
+          description: '<strong>Bootstrap</strong>, <strong>Bulma</strong>, <strong>Jquery</strong>, <strong>D3</strong> and more...'
         },
         Excel: {
-          precentage: 72,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+          precentage: 80,
+          description: '7 years of use of the Excel environment + experience in developing VBA applications(with PostGress DB).',
+          color: 'is-success'
         },
         PostGress: {
-          precentage: 72,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
-        },Post1: {
-          precentage: 72,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
-        },Post2: {
-          precentage: 72,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
-        },Post4: {
-          precentage: 72,
-          description: 'Lorem ipusom ksksk lalal kerk kamcon keoeoo l'
+          precentage: 20,
+          description: 'Creating tables, linking tables through pgadmin.'
+        },
+        LibreBase: {
+          precentage: 65,
+          description: 'Application development in "Libre Base" interaction with postgres.'
+        },
+
+        Sql: {
+          precentage: 20,
+          description: 'Small application in the Libra Base',
+          color: 'is-link'
+        }
+        ,
+        PowerBi: {
+          precentage: 50,
+          description: 'Creating a sql and exel database reports.'
+        },
+        AdobeIllustrator: {
+          precentage: 20,
+          description: 'Small graphic illustrations.'
         }
       }
 
@@ -208,7 +240,7 @@ contModal.setContent(contentMySkilzz.mySkilzz);
 }
 
 
-showMySkilz()
+//showMySkilz()
 
 
 

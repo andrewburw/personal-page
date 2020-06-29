@@ -87,7 +87,7 @@ $modal.querySelector('[data-links]').innerHTML = `<ul><li><a class="level-left" 
   Object.keys(options.skilzData).forEach(key => {
     let value = options.skilzData[key];
 
-   skilzRender.push( `<tr><td><span class="tag is-medium ${value.color || 'is-light'}">${key}</span></td><td><progress class="progress is-small" value=${value.precentage} max="100"></progress></td><td>${value.description}</td></tr>`)
+   skilzRender.push( `<tr><td><span class="tag is-medium ${value.color || 'is-light'}">${key}</span></td><td><progress class="progress is-small ${value.color || ''}" value=${value.precentage} max="100"></progress></td><td>${value.description}</td></tr>`)
 
 })
 
