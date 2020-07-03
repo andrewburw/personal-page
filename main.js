@@ -38,8 +38,8 @@ function viewImage(imageSR) {
 
 
   img_now_view = Number(imageSR.id.split('_')[1])
-  galModal.open() //open image galery
-  galModal.setContent(`<img src=${imageSR.src} />`) // set image to modal galery
+  galModal.open() //open image gallery
+  galModal.setContent(`<img src=${imageSR.src} />`) // set image to modal gallery
 
 
 }
@@ -150,8 +150,8 @@ contModal.setContent(contentMyExper.guitTeacher,'myWorks');
 //**********************************************
 const contentMySkilzz = {
   mySkilzz: {
-      modalTitle: 'My Skilz',
-      projectName: 'My Skilz Description',
+      modalTitle: 'My Skillz',
+      projectName: 'My Skillz Description',
       projectDescription: 'TESTLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
       skilzData: {
         JavaScript: {
