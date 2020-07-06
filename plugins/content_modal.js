@@ -57,10 +57,11 @@ $modal.addEventListener('click', event => {
  return Object.assign(modal,{
    setContent(options,template) {
 if (template === 'myWorks') {
-
+ //data-projectIMG
 
      $modal.querySelector('[data-modaltitle]').innerHTML = options.modalTitle;
      $modal.querySelector('[data-projecttitle]').innerHTML = options.projectName;
+     $modal.querySelector('[data-projectIMG]').innerHTML = `<img src=${options.pictSRC} />`;
      $modal.querySelector('[data-projectDescription]').innerHTML = `<p>${options.projectDescription}</p>`;
      $modal.querySelector('[data-technologyDescription]').innerHTML = `<p>${options.technologyDescription}</p>`;
      $modal.querySelector('[data-creationDescription]').innerHTML = `<p>${options.creationDescription}</p>`;
@@ -87,7 +88,7 @@ $modal.querySelector('[data-links]').innerHTML = `<ul><li><a class="level-left" 
   Object.keys(options.skilzData).forEach(key => {
     let value = options.skilzData[key];
 
-   skilzRender.push( `<tr><td><span class="tag is-medium ${value.color || 'is-light'}">${key}</span></td><td><progress class="progress is-small ${value.color || ''}" value=${value.precentage} max="100"></progress></td><td>${value.description}</td></tr>`)
+   skilzRender.push( `<tr><td><span class="tag is-medium ${value.color || 'is-light'}">${key}</span></td><td class='tooltip'><span class="tooltiptext">${value.precentage}%</span><progress class="progress is-small ${value.color || ''}" value=${value.precentage} max="100"></progress></td><td>${value.description}</td></tr>`)
 
 })
 

@@ -69,7 +69,7 @@ const modalTamplate = {
      <div class="content">
        <h1 data-projecttitle></h1>
        <div class="level-item has-text-centered">
-       <figure class="image  is-128x128">
+       <figure class="image" data-projectIMG>
 <img src="https://bulma.io/images/placeholders/128x128.png" / >
 </figure>
 </div>
@@ -115,21 +115,39 @@ const contentMyExper = {
       guitTeacher: {
            modalTitle: 'Web Project',
            projectName: 'Guitar Teacher',
-           pictSRC: 'test',
-           projectDescription: 'TESTLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
-           technologyDescription:'TESTLorem ipsum dolor sit amet,eque TESTLorem ipsum dolor sit amet, consectetur adipiscing TESTLorem ipsum dolor sit amet, consectetur adipiscing',
+           pictSRC: 'img/projects/note_project.png',
+           projectDescription: 'Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a non-standard neck.',
+           technologyDescription:'I chose SVG graphics technology to implement this idea. The control of the graphical interface occurs through the library <strong> D3 </strong> .',
            technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
-           creationDescription:`Creation Lorem ipsum dolor sit amet,eque <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
-           TESTLorem ipsum dolor sit amet, consectetur adipiscing TESTLorem ipsum dolor sit amet, consectetur adipiscing
-          ante lacus, malesuada ac auctor vitae, congue . Phasellus lacus ex, semper ac tortor nec, fringil
-            ante lacus, malesuada ac auctor vitae, congue . Phasellus lacus ex, semper ac tortor nec, fringil
-
-           `,
+           creationDescription:`In implementing this project, I explored the possibilities of svg graphics, the possibility of
+           libraries for web interfaces. <blockquote>One of the minuses of the project: the organization of the code is not good enough and the
+            complexity of expanding the project.</blockquote>
+            In the near future I plan to add a description of the help section and the elimination of bugs.
+                      `,
            links: {
-             github: 'https://www.github.com',
-             projectSite: 'https://www.github.com'
+             github: 'https://github.com/andrewburw/Guitar-note-teacher',
+             projectSite: 'https://andrewburw.github.io/Guitar-note-teacher'
            },
-           progress: 16
+           progress: 90
+
+      },
+      tankApp: {
+           modalTitle: 'Web Project',
+           projectName: 'Tank App',
+           pictSRC: 'img/projects/tank_app.png',
+           projectDescription: 'Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a non-standard neck.',
+           technologyDescription:'I chose SVG graphics technology to implement this idea. The control of the graphical interface occurs through the library <strong> D3 </strong> .',
+           technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
+           creationDescription:`In implementing this project, I explored the possibilities of svg graphics, the possibility of
+           libraries for web interfaces. <blockquote>One of the minuses of the project: the organization of the code is not good enough and the
+            complexity of expanding the project.</blockquote>
+            In the near future I plan to add a description of the help section and the elimination of bugs.
+                      `,
+           links: {
+             github: 'none',
+             projectSite: 'none'
+           },
+           progress: 80
 
       }
 
@@ -137,11 +155,23 @@ const contentMyExper = {
 };
 
 
-function showMyWork(){
+function showMyWork(val){
 
-contModal.open();
-contModal.setTamplate(modalTamplate.myWebWorks);
-contModal.setContent(contentMyExper.guitTeacher,'myWorks');
+  switch(val) {
+    case 'guitarTeacher':
+    contModal.open();
+    contModal.setTamplate(modalTamplate.myWebWorks);
+    contModal.setContent(contentMyExper.guitTeacher,'myWorks');
+      break;
+    case 'tankApp':
+    contModal.open();
+    contModal.setTamplate(modalTamplate.myWebWorks);
+    contModal.setContent(contentMyExper.tankApp,'myWorks');
+      break;
+    default:
+      // code block
+  }
+
 
 }
 

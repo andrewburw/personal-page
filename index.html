@@ -248,20 +248,20 @@ hornespill@gmail.com
 
    <div class="columns">
   <div class="column is-one-fifth"><span class="tag is-medium is-warning">JavaScript</span></div>
-  <div class="column "><progress class="progress is-warning" value="60" max="100">15%</progress></div>
+  <div class="column  tooltip"> <span class="tooltiptext">60%</span><progress class="progress is-warning" value="60" max="100">15%</progress></div>
 </div>
 <div class="columns">
 <div class="column is-one-fifth"><span class="tag is-medium is-danger">Html</span></div>
-<div class="column "><progress class="progress is-danger" value="80" max="100">15%</progress></div>
+<div class="column tooltip"><span class="tooltiptext">80%</span><progress class="progress is-danger" value="80" max="100">15%</progress></div>
 </div>
 <div class="columns">
 <div class="column is-one-fifth"><span class="tag is-medium is-info">Css</span></div>
-<div class="column "><progress class="progress is-info" value="50" max="100">15%</progress></div>
+<div class="column tooltip"><span class="tooltiptext">50%</span><progress class="progress is-info" value="50" max="100">15%</progress></div>
 </div>
 
 <div class="columns">
 <div class="column is-one-fifth"><span class="tag is-medium is-success">NodeJS</span></div>
-<div class="column "><progress class="progress is-success"  value="10" max="100">15%</progress></div>
+<div class="column tooltip"><span class="tooltiptext">10%</span><progress class="progress is-success"  value="10" max="100">15%</progress></div>
 </div>
 <div class="level level-right">
 <button class="button" onclick="showMySkilz()">View more...</button>
@@ -277,7 +277,7 @@ hornespill@gmail.com
    <div class="container">
      <h1 class="title">My Experience</h1>
      <h2 class="subtitle">
-       Few words about my self <strong>sections</strong>, like the one you're currently reading
+       In this section you can view my projects.
      </h2>
 
      <div class="tile is-ancestor">
@@ -285,27 +285,39 @@ hornespill@gmail.com
       <article class="tile is-child box">
         <p class="title is-4">Guitar Note Teacher</p>
 
-        <figure class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <figure class="image ">
+      <img src="img/projects/note_project.png" alt="Guitar Teacher">
     </figure>
-    <p class="subtitle is-5">Aplication for viwing notes on guitar fretboard.</p>
-        <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat ultrices diam nec pulvinar.
+    <p class="subtitle is-6"><strong>Application for learning notes on guitar fretboard.</strong></p>
+        <p>Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a standard & non-standard neck.
          </p>
             <br />
-            <a onclick="showMyWork();"> View info... </a>
+            <a onclick="showMyWork('guitarTeacher');"> View info... </a>
 
       </article>
      </div>
      <div class="tile is-parent">
       <article class="tile is-child box">
-        <p class="title is-4">Two</p>
-        <p class="subtitle">Subtitle</p>
+        <p class="title is-4">Tank App</p>
+        <figure class="image ">
+      <img src="img/projects/tank_app.png" alt="Tank App">
+    </figure>
+    <p class="subtitle is-6"><strong>Community application for best gasoline prices.</strong></p>
+        <p>Tank App is comunity of low-prices.Do not refuel at the highest price! Use the map to find the best gas station prices near you. </p>
+            <br />
+            <a onclick="showMyWork('tankApp')"> View info... </a>
       </article>
      </div>
      <div class="tile is-parent">
       <article class="tile is-child box">
-        <p class="title is-4">Three</p>
-        <p class="subtitle">Subtitle</p>
+        <p class="title is-4">Timing</p>
+        <figure class="image ">
+      <img src="img/projects/timing_project.png" alt="Tank App">
+    </figure>
+    <p class="subtitle is-6"><strong>Employe working hours.</strong></p>
+        <p>Tank App is comunity of low-prices.Do not refuel at the highest price! Use the map to find the best gas station prices near you. </p>
+            <br />
+            <a onclick="showMyWork('tankApp')"> View info... </a>
       </article>
      </div>
 
