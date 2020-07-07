@@ -183,3 +183,10 @@ progress{margin-top: 15px;}
   visibility: visible;
   opacity: 1;
 }
+/* My expirience section botom click content*/
+.clickViewMyWorks_block { position: relative;}
+.clickViewMyWorks {
+   position: absolute;
+   bottom: 1rem;
+
+}

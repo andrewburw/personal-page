@@ -25,6 +25,12 @@ Constructor.prototype.insertNode = function(htm) {
   this.elems[0].appendChild(htm)
 };
 
+Constructor.prototype.setPageView = function(htm) {
+
+  this.elems[0].scrollIntoView()
+};
+
+
 Constructor.prototype.insertHTM = function(htm) {
 
   this.elems[0].insertAdjacentHTML('afterbegin',htm)

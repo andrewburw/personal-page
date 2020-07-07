@@ -41,21 +41,22 @@ hornespill@gmail.com
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="navbarBasic" class="navbar-menu">
     <div class="navbar-end">
-      <a class="navbar-item"> Home </a>
+      <a class="navbar-item" onclick="setPagePosition('.bg-main')"> Home </a>
 
-      <a class="navbar-item"> About </a>
+      <a class="navbar-item" onclick="setPagePosition('#aboutMe')"> About </a>
 
-      <a class="navbar-item"> Portfolio </a>
+      <a class="navbar-item" onclick="setPagePosition('#skills')"> Skills </a>
 
-      <a class="navbar-item"> Art </a>
+      <a class="navbar-item" onclick="setPagePosition('#portfolio')"> Portfolio </a>
+
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link"> More </a>
         <div class="navbar-dropdown">
           <a class="navbar-item"> About </a>
-          <a class="navbar-item"> Jobs </a>
+          <a class="navbar-item"> Art </a>
           <a class="navbar-item"> Contact </a>
           <hr class="navbar-divider">
           <a class="navbar-item"> Report an issue </a>
@@ -88,7 +89,7 @@ hornespill@gmail.com
 
 
 
-    <div class="container">
+    <div class="container" id="aboutMe">
        <section class="section">
          <div class="container">
            <h1 class="title">About me</h1>
@@ -132,7 +133,7 @@ hornespill@gmail.com
           </div>
         </article>
       </div>
-      <div class="tile is-parent is-8">
+      <div class="tile is-parent is-7">
         <article class="tile is-child box">
           <p class="title">Main column</p>
           <p class="subtitle">With some content</p>
@@ -223,7 +224,7 @@ hornespill@gmail.com
 </section>
 
 <!-- scilzz -->
-<section class="section">
+<section class="section" id='skills'>
    <div class="container">
      <h1 class="title">My skills.</h1>
      <h2 class="subtitle">
@@ -273,18 +274,17 @@ hornespill@gmail.com
 </section>
 
 
-<section class="section">
+<section class="section" id="portfolio">
    <div class="container">
      <h1 class="title">My Experience</h1>
      <h2 class="subtitle">
-       In this section you can view my projects.
+       In this section you can view part of my projects.
      </h2>
 
      <div class="tile is-ancestor">
      <div class="tile is-parent">
-      <article class="tile is-child box">
+      <article class="tile is-child box clickViewMyWorks_block">
         <p class="title is-4">Guitar Note Teacher</p>
-
         <figure class="image ">
       <img src="img/projects/note_project.png" alt="Guitar Teacher">
     </figure>
@@ -292,12 +292,13 @@ hornespill@gmail.com
         <p>Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a standard & non-standard neck.
          </p>
             <br />
-            <a onclick="showMyWork('guitarTeacher');"> View info... </a>
-
+        <span class="clickViewMyWorks"><a onclick="showMyWork('guitarTeacher');"> View info... </a></span>
       </article>
      </div>
+
+
      <div class="tile is-parent">
-      <article class="tile is-child box">
+      <article class="tile is-child box clickViewMyWorks_block">
         <p class="title is-4">Tank App</p>
         <figure class="image ">
       <img src="img/projects/tank_app.png" alt="Tank App">
@@ -305,19 +306,20 @@ hornespill@gmail.com
     <p class="subtitle is-6"><strong>Community application for best gasoline prices.</strong></p>
         <p>Tank App is comunity of low-prices.Do not refuel at the highest price! Use the map to find the best gas station prices near you. </p>
             <br />
-            <a onclick="showMyWork('tankApp')"> View info... </a>
+        <span class="clickViewMyWorks">    <a onclick="showMyWork('tankApp')"> View info... </a> </span>
       </article>
      </div>
      <div class="tile is-parent">
-      <article class="tile is-child box">
+      <article class="tile is-child box clickViewMyWorks_block">
         <p class="title is-4">Timing</p>
         <figure class="image ">
-      <img src="img/projects/timing_project.png" alt="Tank App">
+      <img src="img/projects/timing_project.png" alt="Timing App">
     </figure>
     <p class="subtitle is-6"><strong>Employe working hours.</strong></p>
-        <p>Tank App is comunity of low-prices.Do not refuel at the highest price! Use the map to find the best gas station prices near you. </p>
+        <p>Fullstack project - a really working project from my last work. The goal of the project is to view the set hours of work with the ability to watch the archive of months. </p>
             <br />
-            <a onclick="showMyWork('tankApp')"> View info... </a>
+            <span class="clickViewMyWorks"><a onclick="showMyWork('workHours')"> View info... </a></span>
+
       </article>
      </div>
 
@@ -326,25 +328,47 @@ hornespill@gmail.com
 
      <div class="tile is-ancestor">
      <div class="tile is-parent">
-     <article class="tile is-child box">
-     <p class="title is-4">One</p>
-     <p class="subtitle">js</p>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat ultrices diam nec pulvinar. Pellentesque congue metus sit amet fringilla molestie.
-        Vestibul </p>
-     </article>
-     </div>
+       <article class="tile is-child box clickViewMyWorks_block">
+         <p class="title is-4">Patterns</p>
+         <figure class="image ">
+           <img src="img/projects/patterns.png" alt="Patterns">
+         </figure>
+         <p class="subtitle is-6"><strong>Pattern visualization.</strong></p>
+         <p>The goal of the project is to understand how the Jquery works. To write my own library on Vannila JS. </p>
+         <br />
+         <span class="clickViewMyWorks"><a onclick="showMyWork('patterns')"> View info... </a></span>
+
+       </article>
+       </div>
+
      <div class="tile is-parent">
-     <article class="tile is-child box">
-     <p class="title is-4">Two</p>
-     <p class="subtitle">Subtitle</p>
-     </article>
-     </div>
-     <div class="tile is-parent">
-     <article class="tile is-child box">
-     <p class="title is-4">Three</p>
-     <p class="subtitle">Subtitle</p>
-     </article>
-     </div>
+       <article class="tile is-child box clickViewMyWorks_block">
+         <p class="title is-4">Portfolio Site</p>
+         <figure class="image ">
+           <img src="img/projects/this_site.png" alt="Portfolio">
+         </figure>
+         <p class="subtitle is-6"><strong>My Portfolio Site.</strong></p>
+         <p>Static Website about myself.</p>
+         <br />
+         <span class="clickViewMyWorks"><a onclick="showMyWork('thisSite')"> View info... </a></span>
+
+       </article>
+ </div>
+
+
+ <div class="tile is-parent">
+   <article class="tile is-child box clickViewMyWorks_block">
+     <p class="title is-4">River App</p>
+     <figure class="image ">
+       <img src="img/projects/river_app.png" alt="River App">
+     </figure>
+     <p class="subtitle is-6"><strong>River routes map.</strong></p>
+     <p>Information Will Follow.</p>
+     <br />
+     <span class="clickViewMyWorks"><a onclick="showMyWork('riverApp')"> View info... </a></span>
+
+   </article>
+ </div>
 
 
      </div>

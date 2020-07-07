@@ -116,10 +116,10 @@ const contentMyExper = {
            modalTitle: 'Web Project',
            projectName: 'Guitar Teacher',
            pictSRC: 'img/projects/note_project.png',
-           projectDescription: 'Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a non-standard neck.',
+           projectDescription: '<stong>Static aplication</strong> - for learning notes on the guitar fretboard. Studying gammas and visualizing them on a standard & non-standard neck.',
            technologyDescription:'I chose SVG graphics technology to implement this idea. The control of the graphical interface occurs through the library <strong> D3 </strong> .',
            technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
-           creationDescription:`In implementing this project, I explored the possibilities of svg graphics, the possibility of
+           creationDescription:`First I drew the interface in illustrator and then transferred to html code, wrote interface control using d3 library. In implementing this project, I explored the possibilities of svg graphics, the possibility of
            libraries for web interfaces. <blockquote>One of the minuses of the project: the organization of the code is not good enough and the
             complexity of expanding the project.</blockquote>
             In the near future I plan to add a description of the help section and the elimination of bugs.
@@ -135,13 +135,11 @@ const contentMyExper = {
            modalTitle: 'Web Project',
            projectName: 'Tank App',
            pictSRC: 'img/projects/tank_app.png',
-           projectDescription: 'Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a non-standard neck.',
-           technologyDescription:'I chose SVG graphics technology to implement this idea. The control of the graphical interface occurs through the library <strong> D3 </strong> .',
-           technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
-           creationDescription:`In implementing this project, I explored the possibilities of svg graphics, the possibility of
-           libraries for web interfaces. <blockquote>One of the minuses of the project: the organization of the code is not good enough and the
-            complexity of expanding the project.</blockquote>
-            In the near future I plan to add a description of the help section and the elimination of bugs.
+           projectDescription: '<strong>Full Stack</strong> apllication -  Tank App is comunity of low-prices.Do not refuel at the highest price! Use the map to find the best gas station prices near you. .',
+           technologyDescription:'I chose this development environment (M.E.R.N) as my main area of development as a developer. For more effective training, it was necessary to develop a more complex application.',
+           technologyList: ['NodeJS','MongoDB','Express','ReactJS','Bootstrap framework','Liflet js','A lot of dependencies'],
+           creationDescription:`In implementing this project, I explored a lot of new interesting information as developer. <blockquote>Only at the end of development, I found out a good react router library. Because of this, the code is a bit confusing.</blockquote>
+
                       `,
            links: {
              github: 'none',
@@ -149,24 +147,113 @@ const contentMyExper = {
            },
            progress: 80
 
+      },
+      workHours: {
+           modalTitle: 'Web Project',
+           projectName: 'Employe Work Hours',
+           pictSRC: 'img/projects/timing_project.png',
+           projectDescription: '<strong>Fullstack project</strong> - a really working project from my last work. The goal of the project is to view the set hours of work with the ability to watch the archive of months.',
+           technologyDescription:'I chose from the available development tools.',
+           technologyList: ['PHP','Jquery framework','PostGress(SQL)','Bootstrap framework'],
+           creationDescription:`Task: display hours of work with PostGress db in a web environment. Backend - a simple API on php  (get the data from the database by SQL query).
+           Frontend - jqery + bootstrap.
+           <blockquote>One of the difficulties was to write api in php without experience in this language.</blockquote>
+
+                      `,
+           links: {
+             github: 'none',
+             projectSite: 'none'
+           },
+           progress: 99
+
+      },
+      patterns: {
+           modalTitle: 'Web Project',
+           projectName: 'Patterns',
+           pictSRC: 'img/projects/patterns.png',
+           projectDescription: '<strong>JS Static Visualization</strong> - just visualization.',
+           technologyDescription:'The goal of the project is to understand how the Jquery works. To write my own library on Vannila JS.',
+           technologyList: ['Vannila JS'],
+           creationDescription:`Task: display pattern by "Vannila JS".
+           <blockquote>Memory leak consumption of large resources.</blockquote>
+            In next version is idea to revrite pattren to "canvas". `,
+           links: {
+             github: 'none',
+             projectSite: 'none'
+           },
+           progress: 99
+
+      },
+
+      thisSite: {
+           modalTitle: 'Web Project',
+           projectName: 'Portfolio Site',
+           pictSRC: 'img/projects/this_site.png',
+           projectDescription: '<strong>Portfolio Static Site</strong> - This site is about me and my achievements.',
+           technologyDescription:'The goal of the project is write a site on bulma framework; create a modular system of modals; use only vanilla js.',
+           technologyList: ['Vannila JS','Bulma','ab_lib.js'],
+           creationDescription:`Task: use only "Vannila JS" and do not use Bootstrap.
+            `,
+           links: {
+             github: 'none',
+             projectSite: 'none'
+           },
+           progress: 99
+
+      },
+      riverApp: {
+           modalTitle: 'Web Project',
+           projectName: 'River App',
+           pictSRC: 'img/projects/river_app.png',
+           projectDescription: 'Information Will Follow',
+           technologyDescription:'Information Will Follow',
+           technologyList: ['NodeJS','MongoDB','Express','ReactJS','Material UI'],
+           creationDescription:`Information Will Follow`,
+           links: {
+             github: 'none',
+             projectSite: 'none'
+           },
+           progress: 5
+
       }
+
 
 
 };
 
 
 function showMyWork(val){
-
+//this_site
   switch(val) {
     case 'guitarTeacher':
-    contModal.open();
-    contModal.setTamplate(modalTamplate.myWebWorks);
-    contModal.setContent(contentMyExper.guitTeacher,'myWorks');
+      contModal.open();
+      contModal.setTamplate(modalTamplate.myWebWorks);
+      contModal.setContent(contentMyExper.guitTeacher,'myWorks');
       break;
     case 'tankApp':
-    contModal.open();
-    contModal.setTamplate(modalTamplate.myWebWorks);
-    contModal.setContent(contentMyExper.tankApp,'myWorks');
+      contModal.open();
+      contModal.setTamplate(modalTamplate.myWebWorks);
+      contModal.setContent(contentMyExper.tankApp,'myWorks');
+      break;
+    case 'workHours':
+      contModal.open();
+      contModal.setTamplate(modalTamplate.myWebWorks);
+      contModal.setContent(contentMyExper.workHours,'myWorks');
+        break;
+    case 'patterns':
+      contModal.open();
+      contModal.setTamplate(modalTamplate.myWebWorks);
+      contModal.setContent(contentMyExper.patterns,'myWorks');
+      break;
+    case 'thisSite':
+      contModal.open();
+      contModal.setTamplate(modalTamplate.myWebWorks);
+      contModal.setContent(contentMyExper.thisSite,'myWorks');
+      break;
+    case 'riverApp':
+      contModal.open();
+      contModal.setTamplate(modalTamplate.myWebWorks);
+      contModal.setContent(contentMyExper.riverApp,'myWorks');
       break;
     default:
       // code block
@@ -269,10 +356,9 @@ contModal.setContent(contentMySkilzz.mySkilzz);
 
 }
 
-
-//showMySkilz()
-
-
+function setPagePosition(val){
+  $(val).setPageView(); 
+}
 
 
 
