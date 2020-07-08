@@ -79,7 +79,9 @@ $modal.querySelector('[data-links]').innerHTML = `<ul><li><a class="level-left" 
 
 
 
-} else {
+} else if (template === 'skills') {
+
+
    let skilzRender = [];
   $modal.querySelector('[data-modaltitle]').innerHTML = options.modalTitle;
   $modal.querySelector('[data-projecttitle]').innerHTML = options.projectName;
@@ -94,13 +96,13 @@ $modal.querySelector('[data-links]').innerHTML = `<ul><li><a class="level-left" 
 
 $modal.querySelector('[data-tablecontent]').innerHTML = skilzRender.join(' ')
 
-
-
-
+} else if (template === 'warnMsg') {
+  $modal.querySelector('[data-modaltitle]').innerHTML = options.modalTitle;
+  $modal.querySelector('[data-header]').innerHTML = options.modalHeader;
+  $modal.querySelector('[data-maincontent]').innerHTML = options.modalContent;
+  $modal.querySelector('[data-secondmsg]').innerHTML = options.modalSecondContent;
 
 }
-
-
 
 }
 
