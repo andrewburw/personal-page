@@ -114,7 +114,7 @@ function setPagePosition(val){
 //**********************************************
 
 function showWarn(){
-
+// pressed dowonload CV
 contModal.open();
 contModal.setTamplate(modalTamplate.emptyModal);
 contModal.setContent(warnContent.warnCv,'warnMsg');
@@ -122,9 +122,15 @@ contModal.setContent(warnContent.warnCv,'warnMsg');
 }
 
 (function writeMsg() {
-
+// pressed Write me message
   contModal.open();
-  contModal.setTamplate(modalTamplate.msgModal);
+  contModal.setTamplate(modalTamplate.emptyModal);
+  contModal.setContent(warnContent.sendMessage,'warnMsg');
+  $('#sendMessageForm').onClick(sendMessage) // call function from file messageForm.js
+
+
+
+
 
 })()
 

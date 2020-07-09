@@ -264,6 +264,27 @@ const warnContent = {
          modalSecondContent: 'Write me by <a href="mailto:andrejsburackovs@gmail.com">Email</a> (andrejsburackovs@gmail.com) or <a onclick="writeMsg()">Form</a>.'
 
 
+       },
+       sendMessage:{
+         modalTitle: 'Message form',
+         modalHeader: '<p class="title is-4">Message.</p><p>Write me a massage by this form:</p><br />',
+         modalContent: `<form><div class="field">
+                                    <label class="label" for="emailField">Email:</label>
+                                        <div class="control">
+                                          <input class="input is-info" id="emailField" type="email" placeholder="Enter your email" required/>
+                                           <p id="emailValidErrormsg" class="help is-danger hidden">This email is invalid</p>
+                                       </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="messageFeild">Your text:</label>
+                               <div class="control">
+                                    <textarea  id="messageFeild" class="textarea is-info" placeholder="Enter your text" required minlength="10" maxlength="255"></textarea>
+                                        <p id="textValidErrormsg" class="help is-danger hidden">Too short/long message!</p>
+  </div>
+</div> <button type="submit" id="sendMessageForm" class="button is-link" >Send message</button></form><br />`,
+         modalSecondContent: ''
+
+
        }
 
 
