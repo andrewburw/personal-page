@@ -57,15 +57,41 @@ function sendMessage(event){
 
     }
 
-   console.log({validMassage});
+   console.log(validMassage);
 
    $('#sendMessageForm').elems[0].disabled = true ;
-
+   Question.create(validMassage)
   // contModal.close();
 
  //async request to server
 
   }
 
+
+}
+
+// *************************************
+// ********* SERVER ********************
+//**************************************
+
+class Question {
+    static create(question){
+
+
+         fetch('https://andrew-questions.firebaseio.com/question.json',{
+           method:'POST',
+           body: JSON.stringify(question),
+           headers: {
+             'content-type': 'application/json'
+           }
+
+         }).then(response => response.json())
+           .then(response =>{
+
+             console.log(response)
+           })
+
+
+    }
 
 }

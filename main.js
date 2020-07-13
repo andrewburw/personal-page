@@ -132,7 +132,7 @@ contModal.setContent(warnContent.warnCv,'warnMsg');
 
 
 
-})()
+})
 
 
 

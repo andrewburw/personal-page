@@ -138,8 +138,8 @@ const contentMyExper = {
            pictSRC: 'img/projects/this_site.png',
            projectDescription: '<strong>Portfolio Static Site</strong> - This site is about me and my achievements.',
            technologyDescription:'The goal of the project is write a site on bulma framework; create a modular system of modals; use only vanilla js.',
-           technologyList: ['Vannila JS','Bulma','ab_lib.js'],
-           creationDescription:`Task: use only "Vannila JS" and do not use Bootstrap or JQuery.
+           technologyList: ['Vannila JS','Bulma','ab_lib.js','Google Firebase'],
+           creationDescription:`Task: use only "Vannila JS" and do not use Bootstrap or JQuery or other labirarys.
             `,
            links: {
              github: 'none',
