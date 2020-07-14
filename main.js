@@ -32,7 +32,7 @@ $('#hideArtGallery').onClick(() => {
 
 
 let img_now_view = 1  ;
-let IMAGE_IN_GALERY = 6;
+let IMAGE_IN_GALERY = 16;
 
 function viewImage(imageSR) {
 
