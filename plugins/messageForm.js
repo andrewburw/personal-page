@@ -87,8 +87,16 @@ class Question {
 
          }).then(response => response.json())
            .then(response =>{
+             if (response.name !== undefined) {
+                 $('#sendSucces').removeClass('hidden');
+                 $('#sendSucces').addClass('visible');
 
-             console.log(response)
+                 setTimeout(()=>{
+
+                   contModal.close()
+                 }, 5000);
+
+             }
            })
 
 

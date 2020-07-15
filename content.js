@@ -282,7 +282,8 @@ const warnContent = {
                                         <p id="textValidErrormsg" class="help is-danger hidden">Too short/long message!</p>
   </div>
 </div> <button type="submit" id="sendMessageForm" class="button is-link" >Send message</button></form><br />`,
-         modalSecondContent: ''
+         modalSecondContent: `<div id="sendSucces" class="notification is-primary hidden">
+                          Message sended!</div>`
 
 
        }

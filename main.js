@@ -121,7 +121,7 @@ contModal.setContent(warnContent.warnCv,'warnMsg');
 
 }
 
-(function writeMsg() {
+function writeMsg() {
 // pressed Write me message
   contModal.open();
   contModal.setTamplate(modalTamplate.emptyModal);
@@ -132,7 +132,7 @@ contModal.setContent(warnContent.warnCv,'warnMsg');
 
 
 
-})
+}
 
 
 
