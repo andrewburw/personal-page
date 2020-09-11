@@ -15,7 +15,7 @@ main {
 
 .test {
   background-color: #363636;
-  
+
 }
 
 .text_color_cutome {
@@ -58,13 +58,6 @@ main {
   box-sizing: border-box;
 }
 
-.abmodal {
-
-}
-
-.conentModal {
-
-}
 .abmodal.open .modal_custome,
 .abmodal.open .modal-content {
 

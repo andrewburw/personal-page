@@ -69,14 +69,14 @@ function showMyWork(val){
   contModal.open();
   contModal.setTamplate(modalTamplate.myWebWorks);
   switch(val) {
-    case 'guitarTeacher':
-      contModal.setContent(contentMyExper.guitTeacher,'myWorks');
+    case 'riverApp':
+      contModal.setContent(contentMyExper.riverApp,'myWorks');
       break;
     case 'tankApp':
       contModal.setContent(contentMyExper.tankApp,'myWorks');
       break;
-    case 'workHours':
-      contModal.setContent(contentMyExper.workHours,'myWorks');
+    case 'guitarTeacher':
+      contModal.setContent(contentMyExper.guitTeacher,'myWorks');
       break;
     case 'patterns':
       contModal.setContent(contentMyExper.patterns,'myWorks');
@@ -84,9 +84,9 @@ function showMyWork(val){
     case 'thisSite':
       contModal.setContent(contentMyExper.thisSite,'myWorks');
       break;
-    case 'riverApp':
-      contModal.setContent(contentMyExper.riverApp,'myWorks');
-      break;
+      case 'workHours':
+        contModal.setContent(contentMyExper.workHours,'myWorks');
+        break;
     default:
       console.warn('Error: No content found!');
   }

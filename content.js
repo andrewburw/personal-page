@@ -60,24 +60,22 @@ emptyModal: `<div class='content'>
 
 
 const contentMyExper = {
-      guitTeacher: {
-           modalTitle: 'Web Project',
-           projectName: 'Guitar Teacher',
-           pictSRC: 'img/projects/note_project.png',
-           projectDescription: '<stong>Static aplication</strong> - for learning notes on the guitar fretboard. Studying gammas and visualizing them on a standard & non-standard neck.',
-           technologyDescription:'I chose SVG graphics technology to implement this idea. The control of the graphical interface occurs through the library <strong> D3 </strong> .',
-           technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
-           creationDescription:`First I drew the interface in illustrator and then transferred to html code, wrote interface control using d3 library. In implementing this project, I explored the possibilities of svg graphics, the possibility of
-           libraries for web interfaces. <blockquote>In 2017, it seemed to me that the possibility of developing this idea through SVG was very interesting and quickly implemented.</blockquote>
-            In the near future I plan to add a description of the help section and the elimination of bugs.
-                      `,
-           links: {
-             github: 'https://github.com/andrewburw/Guitar-note-teacher',
-             projectSite: 'https://andrewburw.github.io/Guitar-note-teacher'
-           },
-           progress: 90
 
-      },
+  riverApp: {
+       modalTitle: 'Web Project',
+       projectName: 'River App',
+       pictSRC: 'img/projects/river_app.png',
+       projectDescription: 'App for drawing maps of your adventures',
+       technologyDescription:'M.E.R.N',
+       technologyList: ['NodeJS','MongoDB','Express','ReactJS','Bulma Framework','Liflet.js','A lot of dependencies'],
+       creationDescription:`My biggest and most difficult project at the moment.`,
+       links: {
+         github: 'https://github.com/andrewburw/Trip-Map',
+         projectSite: 'https://tripmap.herokuapp.com/'
+       },
+       progress: 90
+
+     },
       tankApp: {
            modalTitle: 'Web Project',
            projectName: 'Tank App',
@@ -89,12 +87,29 @@ const contentMyExper = {
 
                       `,
            links: {
-             github: 'none',
-             projectSite: 'none'
+             github: 'https://github.com/andrewburw/tank-app',
+             projectSite: 'https://tankappplatvia.herokuapp.com/'
            },
            progress: 80
 
-      },
+      },  guitTeacher: {
+             modalTitle: 'Web Project',
+             projectName: 'Guitar Teacher',
+             pictSRC: 'img/projects/note_project.png',
+             projectDescription: '<stong>Static aplication</strong> - for learning notes on the guitar fretboard. Studying gammas and visualizing them on a standard & non-standard neck.',
+             technologyDescription:'I chose SVG graphics technology to implement this idea. The control of the graphical interface occurs through the library <strong> D3 </strong> .',
+             technologyList: ['D3 framework','Jquery framework','SVG Technology','Bootstrap framework'],
+             creationDescription:`First I drew the interface in illustrator and then transferred to html code, wrote interface control using d3 library. In implementing this project, I explored the possibilities of svg graphics, the possibility of
+             libraries for web interfaces. <blockquote>In 2017, it seemed to me that the possibility of developing this idea through SVG was very interesting and quickly implemented.</blockquote>
+              In the near future I plan to add a description of the help section and the elimination of bugs.
+                        `,
+             links: {
+               github: 'https://github.com/andrewburw/Guitar-note-teacher',
+               projectSite: 'https://andrewburw.github.io/Guitar-note-teacher'
+             },
+             progress: 90
+
+        },
       workHours: {
            modalTitle: 'Web Project',
            projectName: 'Employe Work Hours',
@@ -108,8 +123,8 @@ const contentMyExper = {
 
                       `,
            links: {
-             github: 'none',
-             projectSite: 'none'
+             github: 'https://github.com/andrewburw/timing',
+             projectSite: 'https://github.com/andrewburw/timing'
            },
            progress: 99
 
@@ -125,8 +140,8 @@ const contentMyExper = {
            <blockquote>Memory leak consumption of large resources.</blockquote>
             In next version is idea to revrite pattren to "canvas". `,
            links: {
-             github: 'none',
-             projectSite: 'none'
+             github: 'https://github.com/andrewburw/patterns',
+             projectSite: 'https://github.com/andrewburw/patterns'
            },
            progress: 99
 
@@ -142,27 +157,13 @@ const contentMyExper = {
            creationDescription:`Task: use only "Vannila JS" and do not use Bootstrap or JQuery or other labirarys.
             `,
            links: {
-             github: 'none',
+             github: 'https://github.com/andrewburw/personal-page',
              projectSite: 'none'
            },
            progress: 99
 
       },
-      riverApp: {
-           modalTitle: 'Web Project',
-           projectName: 'River App',
-           pictSRC: 'img/projects/river_app.png',
-           projectDescription: 'Information Will Follow',
-           technologyDescription:'Information Will Follow',
-           technologyList: ['NodeJS','MongoDB','Express','ReactJS','Material UI','Liflet.js'],
-           creationDescription:`Information Will Follow`,
-           links: {
-             github: 'none',
-             projectSite: 'none'
-           },
-           progress: 5
 
-      }
 
 };
 const contentMySkilzz = {
@@ -188,17 +189,17 @@ const contentMySkilzz = {
           color: 'is-info'
         },
         MongoDB: {
-          precentage: 10,
+          precentage: 40,
           description: 'My main DB.Need more practice.',
           color: 'is-primary'
         },
         mongooseJS: {
-          precentage: 10,
+          precentage: 40,
           description: 'My main DB.Need more practice.',
           color: 'is-primary'
         },
         NodeJS: {
-          precentage: 10,
+          precentage: 40,
           description: 'My main programming backend language.Need more practice.',
           color: 'is-success'
         },
