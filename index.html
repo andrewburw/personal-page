@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrew</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <link rel="stylesheet" href="main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  </head>
-  <body>
-<!--
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+  <!--
 
  /$$                            /$$$$$$                  /$$
 | $$                           /$$__  $$                | $$
@@ -25,548 +27,557 @@
 
 hornespill@gmail.com
 -->
-      <nav class="nav navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="container">
+  <nav class="nav navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
 
 
-  <div class="navbar-brand animated pulse ">
-    <a class="navbar-item" href="/">
-      <img src="img/ms-icon-310x310.png" width="50" height="50">
-    </a>
+      <div class="navbar-brand animated pulse ">
+        <a class="navbar-item" href="/">
+          <img src="img/ms-icon-310x310.png" width="50" height="50">
+        </a>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasic" class="navbar-menu">
-    <div class="navbar-end">
-      <a class="navbar-item" onclick="setPagePosition('.bg-main')"> Home </a>
-
-      <a class="navbar-item" onclick="setPagePosition('#aboutMe')"> About </a>
-
-      <a class="navbar-item" onclick="setPagePosition('#skills')"> Skills </a>
-
-      <a class="navbar-item" onclick="setPagePosition('#portfolio')"> Portfolio </a>
-
-      <a class="navbar-item" onclick="setPagePosition('#myContacts')">Contacts </a>
-
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link"> More </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item"> About </a>
-          <a class="navbar-item"> Art </a>
-          <a class="navbar-item"> Interests </a>
-          <a class="navbar-item"> Contact </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item"> Report an issue </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!--  MAIN PAGE -->
-<main class="container" >
-<section class="hero is-fullheight-with-navbar is-primary is-bold">
-  <div class="hero-body bg-main">
-    <div class="container has-text-centered ">
-      <h1 class="title is-size-1">
-        Hi, I'm Andrew
-      </h1>
-      <h2 class="subtitle is-size-4">
-        Full Stack Developer.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- about me -->
-<section class="section">
-
-
-
-    <div class="container" id="aboutMe">
-       <section class="section">
-         <div class="container">
-           <h1 class="title">About me</h1>
-           <h2 class="subtitle">
-             Information.
-           </h2>
-
-         </div>
-       </section>
-      <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-
-          <div class="content">
-
-    <div class="card-image">
-      <figure class="image is-3by2">
-        <img src="./img/myself.jpg" alt="Andrew">
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media">
-        <div class="media-left">
-
-        </div>
-        <div class="media-content">
-          <p class="title is-4">Andrew Burachkov</p>
-          <p class="subtitle is-6">@AndrewBurw</p>
-            <br />
-        </div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
 
-      <div class="content"> <p class="title is-5">Basic Information:</p>
-        <div class="columns">
-          <div class="column">
-          <p><strong>Gender:</strong></p>
-          <p><strong>Place of Birth:</strong></p>
-          <p><strong>Language:</strong></p>
-          </div>
-          <div class="column">
-          <p>Male.</p>
-          <p>Riga, Latvia.</p>
-          <p>LV,RU,EN.</p>
-          </div>
-          </div>
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" onclick="setPagePosition('.bg-main')"> Home </a>
 
-     </div> </div>
+          <a class="navbar-item" onclick="setPagePosition('#aboutMe')"> About </a>
 
-          </div> </article> </div>
+          <a class="navbar-item" onclick="setPagePosition('#skills')"> Skills </a>
 
-<div class="tile is-parent is-8">
-  <article class="tile is-child box">
-    <p class="title">About</p>
-    <p class="subtitle"> Few words about my self.</p>
-    <div class="content">
-      <p>Hi! A'm Andrew  Results-oriented Junior Fullstack Developer dedicated to creating and optimizing interactive, user-friendly,
-        and feature-rich websites. Leverage analytical skills and strong attention to detail in order to deliver
-        original and efficient web solutions, provide technical knowledge and expertise, build new websites from start to finish.</p>
-        <hr />
-        <p class="downloadMyCv"><button class="button  is-small is-primary" onclick="showWarn()"> DOWNLOAD my Resume </button>
-           <button class="button  is-small is-link" onclick="writeMsg()"> Write to me by form </button>
-        </p>
+          <a class="navbar-item" onclick="setPagePosition('#portfolio')"> Portfolio </a>
 
-    </div>
-  </article>
-</div>
+          <a class="navbar-item" onclick="setPagePosition('#myContacts')">Contacts </a>
 
 
-
-
-</div>
-</div>
-</section>
-
-<!-- scilzz -->
-<section class="section test" id='skills'>
-   <div class="container">
-     <h1 class="title text_color_cutome">My skills.</h1>
-     <h2 class="subtitle text_color_cutome">
-       Few words about my latest experience and skills.</h2>
-
- <div class="tile is-ancestor">
-     <div class="tile is-parent ">
-      <article class="tile is-child box">
-        <h1 class="title is-size-4">What I do.</h1>
-        <p class="subtitle is-size-5">A few words about the latest experience...</p>
-        <p>I have two years of experience developing and supporting small applications
-            (logging systems) in the environment of <strong>Libre Base & PostgreSQL database </strong>as my main job.
-          There are also many projects as a hobby for web technologies.In below or right section is quick overview of my
-          main technical skill sets and technologies I use.Want to find out more about my expirience? Check out my <a href="" onclick="event.preventDefault();showWarn()">Online resume</a> and <a href="" onclick="event.preventDefault();setPagePosition('#portfolio')">project portfolio</a>.</p>
-      </article>
-
-     </div>
-     <div class="tile is-parent is-7">
-      <article class="tile is-child box">
-        <h1 class="title is-size-4">My skills raitings.</h1>
-
-
-   <div class="columns">
-  <div class="column is-one-fifth"><span class="tag is-medium is-warning">JavaScript</span></div>
-  <div class="column  tooltip"> <span class="tooltiptext">60%</span><progress class="progress is-warning" value="60" max="100">15%</progress></div>
-</div>
-<div class="columns">
-<div class="column is-one-fifth"><span class="tag is-medium is-danger">Html</span></div>
-<div class="column tooltip"><span class="tooltiptext">80%</span><progress class="progress is-danger" value="80" max="100">15%</progress></div>
-</div>
-<div class="columns">
-<div class="column is-one-fifth"><span class="tag is-medium is-info">Css</span></div>
-<div class="column tooltip"><span class="tooltiptext">50%</span><progress class="progress is-info" value="50" max="100">15%</progress></div>
-</div>
-
-<div class="columns">
-<div class="column is-one-fifth"><span class="tag is-medium is-success">NodeJS</span></div>
-<div class="column tooltip"><span class="tooltiptext">40%</span><progress class="progress is-success"  value="40" max="100">15%</progress></div>
-</div>
-<div class="level level-right">
-<button class="button" onclick="showMySkilz()">View more...</button>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-
-
-<section class="section" id="portfolio">
-   <div class="container">
-     <h1 class="title">My Experience</h1>
-     <h2 class="subtitle">
-       In this section you can view part of my projects.
-     </h2>
-
-     <div class="tile is-ancestor">
-       <div class="tile is-parent">
-         <article class="tile is-child box clickViewMyWorks_block">
-           <p class="title is-4">River App</p>
-           <figure class="image is-128x128">
-             <img src="img/projects/river_app.png" alt="River App">
-           </figure>
-           <p class="subtitle is-6"><strong>Trip routes map.</strong></p>
-           <p>Draw a map of your adventures. Mark the areas with the most interesting places. Mark the best camping sites.</p>
-           <br />
-           <span class="clickViewMyWorks"><a onclick="showMyWork('riverApp')"> View info... </a></span>
-
-         </article>
-       </div>
-
-
-
-     <div class="tile is-parent">
-      <article class="tile is-child box clickViewMyWorks_block">
-        <p class="title is-4">Tank App</p>
-        <figure class="image ">
-      <img src="img/projects/tank_app.png" alt="Tank App">
-    </figure>
-    <p class="subtitle is-6"><strong>Community application for best gasoline prices.</strong></p>
-        <p>Tank App is comunity of low-prices.Do not refuel at the highest price! Use the map to find the best gas station prices near you. </p>
-            <br />
-        <span class="clickViewMyWorks">    <a onclick="showMyWork('tankApp')"> View info... </a> </span>
-      </article>
-     </div>
-
-
-     <div class="tile is-parent">
-      <article class="tile is-child box clickViewMyWorks_block">
-        <p class="title is-4">Guitar Note Teacher</p>
-        <figure class="image ">
-      <img src="img/projects/note_project.png" alt="Guitar Teacher">
-    </figure>
-    <p class="subtitle is-6"><strong>Application for learning notes on guitar fretboard.</strong></p>
-        <p>Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a standard & non-standard neck.
-         </p>
-            <br />
-        <span class="clickViewMyWorks"><a onclick="showMyWork('guitarTeacher');"> View info... </a></span>
-      </article>
-     </div>
-
-
-
-     </div>
-
-     <div class="tile is-ancestor">
-   <div class="tile is-parent">
-     <article class="tile is-child box clickViewMyWorks_block">
-       <p class="title is-4">Patterns</p>
-       <figure class="image ">
-         <img src="img/projects/patterns.png" alt="Patterns">
-       </figure>
-       <p class="subtitle is-6"><strong>Pattern visualization.</strong></p>
-       <p>The goal of the project is to understand how the Jquery works. To write my own library on Vannila JS. </p>
-       <br />
-       <span class="clickViewMyWorks"><a onclick="showMyWork('patterns')"> View info... </a></span>
-
-     </article>
-   </div>
-
-     <div class="tile is-parent">
-       <article class="tile is-child box clickViewMyWorks_block">
-         <p class="title is-4">Portfolio Site</p>
-         <figure class="image ">
-           <img src="img/projects/this_site.png" alt="Portfolio">
-         </figure>
-         <p class="subtitle is-6"><strong>My Portfolio Site.</strong></p>
-         <p>Static Website about myself.</p>
-         <br />
-         <span class="clickViewMyWorks"><a onclick="showMyWork('thisSite')"> View info... </a></span>
-
-       </article>
- </div>
-
- <div class="tile is-parent">
-  <article class="tile is-child box clickViewMyWorks_block">
-    <p class="title is-4">Timing</p>
-    <figure class="image ">
-  <img src="img/projects/timing_project.png" alt="Timing App">
- </figure>
- <p class="subtitle is-6"><strong>Employe working hours.</strong></p>
-    <p>Fullstack project - a really working project from my last work. The goal of the project is to view the set hours of work with the ability to watch the archive of months. </p>
-        <br />
-        <span class="clickViewMyWorks"><a onclick="showMyWork('workHours')"> View info... </a></span>
-
-  </article>
- </div>
-
-
-     </div>
-</div>
-</section>
-<section class="section">
-<div class="container">
-
-
-       <h1 class="title">My interests in development</h1>
-       <h2 class="subtitle">
-         Few words about my interests in development in this section.
-       </h2>
-
-
-
-
-   <div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-       <div class="level-item">
-     <figure class="image is-128x128">
-       <img src="img/devlogos/js-logo.png">
-     </figure>
-   </div>
-
-      <p class="title is-4">Java Script</p>
-      <p class="subtitle">Language</p>
-      <p> JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level,
-        often just-in-time compiled, and multi-paradigm.
-        It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
-        <a href="https://en.wikipedia.org/wiki/JavaScript">Wiki...</a> </p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <div class="level-item">
-    <figure class="image is-128x128">
-      <img src="img/devlogos/nodejs-logo.jpg">
-    </figure>
-  </div>
-      <p class="title is-4">NodeJS</p>
-      <p class="subtitle">Environment</p>
-      <p>Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running
-         scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.
-         <a href="https://en.wikipedia.org/wiki/Node.js">Wiki...</a>
-      </p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box">
-      <div class="level-item">
-    <figure class="image is-128x128">
-      <img src="img/devlogos/web.png">
-    </figure>
-  </div>
-      <p class="title is-4">Web</p>
-      <p class="subtitle">Subtitle</p>
-      <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).
-         Web development can range from developing a simple single static page of plain text to complex web-based internet
-         applications (web apps), electronic businesses, and social network services.
-         A more comprehensive list of tasks to which web development commonly refers,
-         may include web engineering, web design, web content development, client liaison,
-         client-side/server-side scripting, web server and network security configuration, and e-commerce development.
-         <a href="https://en.wikipedia.org/wiki/Web_development">Wiki...</a>
-      </p>
-    </article>
-  </div>
-
-</div>
-
-<div class="tile is-ancestor">
-<div class="tile is-parent">
- <article class="tile is-child box">
-   <div class="level-item">
- <figure class="image is-128x128">
-   <img src="img/devlogos/reactjs.jpg">
- </figure>
-</div>
-   <p class="title is-4">ReactJS</p>
-   <p class="subtitle">Web framework</p>
-   <p>React (also known as React.js or ReactJS) is an open-source JavaScript library for building user interfaces.
-     It is maintained by Facebook and a community of individual developers and companies.
-     <a href="https://en.wikipedia.org/wiki/React_(web_framework)">Wiki...</a>
-   </p>
- </article>
-</div>
-<div class="tile is-parent">
- <article class="tile is-child box">
-   <div class="level-item">
- <figure class="image is-128x128">
-   <img src="img/devlogos/optimia.jpg">
- </figure>
-</div>
-   <p class="title is-4">Program optimization</p>
-   <p class="subtitle">CS</p>
-   <p>In computer science, program optimization or software optimization is the process of modifying a
-     software system to make some aspect of it work more efficiently or use fewer resources.In general, a computer program may be
-      optimized so that it executes more rapidly, or
-     to make it capable of operating with less memory storage or other resources, or draw less power.</p>
- </article>
-</div>
-
-
-
-<div class="tile is-parent">
- <article class="tile is-child box">
-   <div class="level-item">
- <figure class="image is-128x128">
-   <img src="img/devlogos/php.png">
- </figure>
-</div>
-   <p class="title is-4">PHP</p>
-   <p class="subtitle">Language</p>
-   <p>PHP is a popular general-purpose scripting language that is especially suited to web development.PHP originally stood for
-     Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
-PHP code is usually processed on a web server by a PHP interpreter implemented as a module, a daemon or as a Common Gateway Interface (CGI)
-executable. On a web server, the result of the interpreted and executed PHP code – which may be any type of data.
-     <a href="https://en.wikipedia.org/wiki/PHP">Wiki...</a>
-     </p>
- </article>
-</div>
-
-</div>
-
-
- </div>
-</section>
-
-<!-- art galery -->
-
-
-
-
-<section class="section test">
-
-
-
-        <div class="container">
-          <div class="art_galery_div_box">
-           <h1 class="artGalery_font1">Artwork</h1>
-           <h1 class="artGalery_font1 artGalery_font2">Galery</h1>
-
-          </div>
-
-
-    <div class="columns">
-                <div class="column ">
-                    <img src="img/lightBox/photo1.jpg" id='image_1' onclick="viewImage(this)" />
-                     <img src="img/lightBox/dark_wood.jpg" id='image_4'onclick="viewImage(this)" />
-                      <img class="hidden artGColumn" id='image_7' src="img/lightBox/triangle_work.jpg" onclick="viewImage(this)" />
-                       <img class="hidden artGColumn" id='image_10' src="img/lightBox/gg_work.png" onclick="viewImage(this)" />
-                        <img class="hidden artGColumn" id='image_13' src="img/lightBox/gg_blue.jpg" onclick="viewImage(this)" />
-                            <img class="hidden artGColumn" id='image_16' src="img/lightBox/space_work.jpg" onclick="viewImage(this)">
-                </div>
-                <div class="column">
-                    <img src="img/lightBox/photo3.jpg" id='image_2' onclick="viewImage(this)">
-                    <img src="img/lightBox/bike_work.jpg" id='image_5'onclick="viewImage(this)">
-                      <img class="hidden artGColumn" id='image_8' src="img/lightBox/sea_work.jpg" onclick="viewImage(this)">
-                        <img class="hidden artGColumn" id='image_11' src="img/lightBox/minimal_workl.jpg" onclick="viewImage(this)">
-                          <img class="hidden artGColumn" id='image_14' src="img/lightBox/kar_work.jpg" onclick="viewImage(this)">
-
-                </div>
-                <div class="column">
-                    <img src="img/lightBox/photo5.jpg" id='image_3' onclick="viewImage(this)">
-                    <img src="img/lightBox/photo4.jpg" id='image_6' onclick="viewImage(this)">
-                    <img class="hidden artGColumn" id='image_9' src="img/lightBox/dust_work.jpg" onclick="viewImage(this)">
-                    <img class="hidden artGColumn" id='image_12' src="img/lightBox/hexagon_work.jpg" onclick="viewImage(this)">
-                    <img class="hidden artGColumn" id='image_15' src="img/lightBox/radio_work.jpg" onclick="viewImage(this)">
-
-                </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> About </a>
+              <a class="navbar-item"> Art </a>
+              <a class="navbar-item"> Interests </a>
+              <a class="navbar-item"> Contact </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item"> Report an issue </a>
             </div>
+          </div>
+        </div>
+      </div>
+  </nav>
 
-
-</div>
-  <div id="buttonViewGalery" class="has-text-centered">
-    <button id="showArtGallery" class="button">View more..</button>
-    <button id="hideArtGallery" class="hidden button">Hide Gallery</button>
-  </div>
-
-    </section>
-
-
-
-
-
-
-
-  <br />
-    <section id="tree_main"class="hero  is-bold">
-
-      <div  class="hero-body">
+  <!--  MAIN PAGE -->
+  <main class="container">
+    <section class="hero is-fullheight-with-navbar is-primary is-bold">
+      <div class="hero-body bg-main">
         <div class="container has-text-centered ">
-          <h1 class="title is-size-1" style="color:white">
-          And more info ...
+          <h1 class="title is-size-1">
+            Hi, I'm Andrew
           </h1>
-          <h2 class="subtitle is-size-6">
-              And more info ...
+          <h2 class="subtitle is-size-4">
+            Full Stack Developer.
           </h2>
         </div>
       </div>
     </section>
-<!--bottom  contact -->
-    <section>
-      <br />
-    <div  class="container" id="myContacts">
-      <div class="columns">
-    <div  class="column is-half">
-  <img src="./img/ab_logo.png"  width="250vw" alt="ab_logo" />
 
 
-    <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ,
-      aliquip ex ea commodo consequat.</p>
-  <br />
-      <span class="title is-5"> Contacts </span>
-      <div class="" style="margin-top: 3vw">
-        <span class="icon icons_in_bottom">
-        <i class="fab fa-facebook-f fa-3x"></i>
-        </span>
-        <span class="icon icons_in_bottom">
-      <i class="fas fa-envelope fa-3x"></i>
-        </span>
-        <span class="icon icons_in_bottom">
-        <i class="fab fa-twitter fa-3x"></i>
-        </span>
-        <span class="icon icons_in_bottom">
-        <i class="fab fa-linkedin-in fa-3x"></i>
-        </span>
-        <span class="icon icons_in_bottom"><a style="color:  #363636" href="https://github.com/andrewburw">
-        <i class="fab fa-github-square fa-3x"></i></a>
-      </span>
-      <span class="icon icons_in_bottom">
-        <a style="color:  #363636" href="https://leetcode.com/dron8/">
-        <figure class="image ">
-          <img src="img/LeetCode_logo_black.png">
-        </figure>
-      </a>
-      </span>
+
+
+    <!-- about me -->
+    <section class="section">
+
+
+
+      <div class="container" id="aboutMe">
+        <section class="section">
+          <div class="container">
+            <h1 class="title">About me</h1>
+            <h2 class="subtitle">
+              Information.
+            </h2>
+
+          </div>
+        </section>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+
+              <div class="content">
+
+                <div class="card-image">
+                  <figure class="image is-3by2">
+                    <img src="./img/myself.jpg" alt="Andrew">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Andrew Burachkov</p>
+                      <p class="subtitle is-6">@AndrewBurw</p>
+                      <br />
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    <p class="title is-5">Basic Information:</p>
+                    <div class="columns">
+                      <div class="column">
+                        <p><strong>Gender:</strong></p>
+                        <p><strong>Place of Birth:</strong></p>
+                        <p><strong>Language:</strong></p>
+                      </div>
+                      <div class="column">
+                        <p>Male.</p>
+                        <p>Riga, Latvia.</p>
+                        <p>LV,RU,EN.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+          <div class="tile is-parent is-8">
+            <article class="tile is-child box">
+              <p class="title">About</p>
+              <p class="subtitle"> Few words about my self.</p>
+              <div class="content">
+                <p>Hi! A'm Andrew Results-oriented Junior Fullstack Developer dedicated to creating and optimizing interactive, user-friendly,
+                  and feature-rich websites. Leverage analytical skills and strong attention to detail in order to deliver
+                  original and efficient web solutions, provide technical knowledge and expertise, build new websites from start to finish.</p>
+                <hr />
+                <p class="downloadMyCv"><button class="button  is-small is-primary" onclick="showWarn()"> DOWNLOAD my Resume </button>
+                  <button class="button  is-small is-link" onclick="writeMsg()"> Write to me by form </button>
+                </p>
+
+              </div>
+            </article>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- scilzz -->
+    <section class="section test" id='skills'>
+      <div class="container">
+        <h1 class="title text_color_cutome">My skills.</h1>
+        <h2 class="subtitle text_color_cutome">
+          Few words about my latest experience and skills.</h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent ">
+            <article class="tile is-child box">
+              <h1 class="title is-size-4">What I do.</h1>
+              <p class="subtitle is-size-5">A few words about the latest experience...</p>
+              <p>I have two years of experience developing and supporting small applications
+                (logging systems) in the environment of <strong>Libre Base & PostgreSQL database </strong>as my main job.
+                There are also many projects as a hobby for web technologies.In below or right section is quick overview of my
+                main technical skill sets and technologies I use.Want to find out more about my expirience? Check out my <a href="" onclick="event.preventDefault();showWarn()">Online resume</a> and <a href=""
+                  onclick="event.preventDefault();setPagePosition('#portfolio')">project portfolio</a>.</p>
+            </article>
+
+          </div>
+          <div class="tile is-parent is-7">
+            <article class="tile is-child box">
+              <h1 class="title is-size-4">My skills raitings.</h1>
+
+
+              <div class="columns">
+                <div class="column is-one-fifth"><span class="tag is-medium is-warning">JavaScript</span></div>
+                <div class="column  tooltip"> <span class="tooltiptext">60%</span><progress class="progress is-warning" value="60" max="100">15%</progress></div>
+              </div>
+
+              <div class="columns">
+                <div class="column is-one-fifth"><span class="tag is-medium is-danger">Html</span></div>
+                <div class="column tooltip"><span class="tooltiptext">80%</span><progress class="progress is-danger" value="80" max="100">15%</progress></div>
+              </div>
+
+              <div class="columns">
+                <div class="column is-one-fifth"><span class="tag is-medium is-info">Css</span></div>
+                <div class="column tooltip"><span class="tooltiptext">50%</span><progress class="progress is-info" value="50" max="100">15%</progress></div>
+              </div>
+
+              <div class="columns">
+                <div class="column is-one-fifth"><span class="tag is-medium is-success">NodeJS</span></div>
+                <div class="column tooltip"><span class="tooltiptext">40%</span><progress class="progress is-success" value="40" max="100">15%</progress></div>
+              </div>
+
+              <div class="level level-right">
+                <button class="button" onclick="showMySkilz()">View more...</button>
+              </div>
+          </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <h1 class="title">My Experience</h1>
+        <h2 class="subtitle">
+          In this section you can view part of my projects.
+        </h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box clickViewMyWorks_block">
+              <p class="title is-4">River App</p>
+              <figure class="image is-128x128">
+                <img src="img/projects/river_app.png" alt="River App">
+              </figure>
+              <p class="subtitle is-6"><strong>Trip routes map.</strong></p>
+              <p>Draw a map of your adventures. Mark the areas with the most interesting places. Mark the best camping sites.</p>
+              <br />
+              <span class="clickViewMyWorks"><a onclick="showMyWork('riverApp')"> View info... </a></span>
+
+            </article>
+          </div>
+
+
+
+          <div class="tile is-parent">
+            <article class="tile is-child box clickViewMyWorks_block">
+              <p class="title is-4">Tank App</p>
+              <figure class="image ">
+                <img src="img/projects/tank_app.png" alt="Tank App">
+              </figure>
+              <p class="subtitle is-6"><strong>Community application for best gasoline prices.</strong></p>
+              <p>Tank App is comunity of low-prices.Do not refuel at the highest price! Use the map to find the best gas station prices near you. </p>
+              <br />
+              <span class="clickViewMyWorks"> <a onclick="showMyWork('tankApp')"> View info... </a> </span>
+            </article>
+          </div>
+
+
+          <div class="tile is-parent">
+            <article class="tile is-child box clickViewMyWorks_block">
+              <p class="title is-4">Guitar Note Teacher</p>
+              <figure class="image ">
+                <img src="img/projects/note_project.png" alt="Guitar Teacher">
+              </figure>
+              <p class="subtitle is-6"><strong>Application for learning notes on guitar fretboard.</strong></p>
+              <p>Static aplication for learning notes on the guitar fretboard. Studying gammas and visualizing them on a standard & non-standard neck.
+              </p>
+              <br />
+              <span class="clickViewMyWorks"><a onclick="showMyWork('guitarTeacher');"> View info... </a></span>
+            </article>
+          </div>
+
+
+
+        </div>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box clickViewMyWorks_block">
+              <p class="title is-4">Patterns</p>
+              <figure class="image ">
+                <img src="img/projects/patterns.png" alt="Patterns">
+              </figure>
+              <p class="subtitle is-6"><strong>Pattern visualization.</strong></p>
+              <p>The goal of the project is to understand how the Jquery works. To write my own library on Vannila JS. </p>
+              <br />
+              <span class="clickViewMyWorks"><a onclick="showMyWork('patterns')"> View info... </a></span>
+
+            </article>
+          </div>
+
+          <div class="tile is-parent">
+            <article class="tile is-child box clickViewMyWorks_block">
+              <p class="title is-4">Portfolio Site</p>
+              <figure class="image ">
+                <img src="img/projects/this_site.png" alt="Portfolio">
+              </figure>
+              <p class="subtitle is-6"><strong>My Portfolio Site.</strong></p>
+              <p>Static Website about myself.</p>
+              <br />
+              <span class="clickViewMyWorks"><a onclick="showMyWork('thisSite')"> View info... </a></span>
+
+            </article>
+          </div>
+
+          <div class="tile is-parent">
+            <article class="tile is-child box clickViewMyWorks_block">
+              <p class="title is-4">Timing</p>
+              <figure class="image ">
+                <img src="img/projects/timing_project.png" alt="Timing App">
+              </figure>
+              <p class="subtitle is-6"><strong>Employe working hours.</strong></p>
+              <p>Fullstack project - a really working project from my last work. The goal of the project is to view the set hours of work with the ability to watch the archive of months. </p>
+              <br />
+              <span class="clickViewMyWorks"><a onclick="showMyWork('workHours')"> View info... </a></span>
+
+            </article>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+
+
+        <h1 class="title">My interests in development</h1>
+        <h2 class="subtitle">
+          Few words about my interests in development in this section.
+        </h2>
+
+
+
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <div class="level-item">
+                <figure class="image is-128x128">
+                  <img src="img/devlogos/js-logo.png">
+                </figure>
+              </div>
+
+              <p class="title is-4">Java Script</p>
+              <p class="subtitle">Language</p>
+              <p> JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level,
+                often just-in-time compiled, and multi-paradigm.
+                It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                <a href="https://en.wikipedia.org/wiki/JavaScript">Wiki...</a> </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <div class="level-item">
+                <figure class="image is-128x128">
+                  <img src="img/devlogos/nodejs-logo.jpg">
+                </figure>
+              </div>
+              <p class="title is-4">NodeJS</p>
+              <p class="subtitle">Environment</p>
+              <p>Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running
+                scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.
+                <a href="https://en.wikipedia.org/wiki/Node.js">Wiki...</a>
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <div class="level-item">
+                <figure class="image is-128x128">
+                  <img src="img/devlogos/web.png">
+                </figure>
+              </div>
+              <p class="title is-4">Web</p>
+              <p class="subtitle">Subtitle</p>
+              <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).
+                Web development can range from developing a simple single static page of plain text to complex web-based internet
+                applications (web apps), electronic businesses, and social network services.
+                A more comprehensive list of tasks to which web development commonly refers,
+                may include web engineering, web design, web content development, client liaison,
+                client-side/server-side scripting, web server and network security configuration, and e-commerce development.
+                <a href="https://en.wikipedia.org/wiki/Web_development">Wiki...</a>
+              </p>
+            </article>
+          </div>
+
+        </div>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <div class="level-item">
+                <figure class="image is-128x128">
+                  <img src="img/devlogos/reactjs.jpg">
+                </figure>
+              </div>
+              <p class="title is-4">ReactJS</p>
+              <p class="subtitle">Web framework</p>
+              <p>React (also known as React.js or ReactJS) is an open-source JavaScript library for building user interfaces.
+                It is maintained by Facebook and a community of individual developers and companies.
+                <a href="https://en.wikipedia.org/wiki/React_(web_framework)">Wiki...</a>
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <div class="level-item">
+                <figure class="image is-128x128">
+                  <img src="img/devlogos/optimia.jpg">
+                </figure>
+              </div>
+              <p class="title is-4">Program optimization</p>
+              <p class="subtitle">CS</p>
+              <p>In computer science, program optimization or software optimization is the process of modifying a
+                software system to make some aspect of it work more efficiently or use fewer resources.In general, a computer program may be
+                optimized so that it executes more rapidly, or
+                to make it capable of operating with less memory storage or other resources, or draw less power.</p>
+            </article>
+          </div>
+
+
+
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <div class="level-item">
+                <figure class="image is-128x128">
+                  <img src="img/devlogos/php.png">
+                </figure>
+              </div>
+              <p class="title is-4">PHP</p>
+              <p class="subtitle">Language</p>
+              <p>PHP is a popular general-purpose scripting language that is especially suited to web development.PHP originally stood for
+                Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
+                PHP code is usually processed on a web server by a PHP interpreter implemented as a module, a daemon or as a Common Gateway Interface (CGI)
+                executable. On a web server, the result of the interpreted and executed PHP code – which may be any type of data.
+                <a href="https://en.wikipedia.org/wiki/PHP">Wiki...</a>
+              </p>
+            </article>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+    <!-- art galery -->
+
+
+
+
+    <section class="section test">
+
+
+
+      <div class="container">
+        <div class="art_galery_div_box">
+          <h1 class="artGalery_font1">Artwork</h1>
+          <h1 class="artGalery_font1 artGalery_font2">Galery</h1>
+
+        </div>
+
+
+        <div class="columns">
+          <div class="column ">
+            <img src="img/lightBox/photo1.jpg" id='image_1' onclick="viewImage(this)" />
+            <img src="img/lightBox/dark_wood.jpg" id='image_4' onclick="viewImage(this)" />
+            <img class="hidden artGColumn" id='image_7' src="img/lightBox/triangle_work.jpg" onclick="viewImage(this)" />
+            <img class="hidden artGColumn" id='image_10' src="img/lightBox/gg_work.png" onclick="viewImage(this)" />
+            <img class="hidden artGColumn" id='image_13' src="img/lightBox/gg_blue.jpg" onclick="viewImage(this)" />
+            <img class="hidden artGColumn" id='image_16' src="img/lightBox/space_work.jpg" onclick="viewImage(this)">
+          </div>
+          <div class="column">
+            <img src="img/lightBox/photo3.jpg" id='image_2' onclick="viewImage(this)">
+            <img src="img/lightBox/bike_work.jpg" id='image_5' onclick="viewImage(this)">
+            <img class="hidden artGColumn" id='image_8' src="img/lightBox/sea_work.jpg" onclick="viewImage(this)">
+            <img class="hidden artGColumn" id='image_11' src="img/lightBox/minimal_workl.jpg" onclick="viewImage(this)">
+            <img class="hidden artGColumn" id='image_14' src="img/lightBox/kar_work.jpg" onclick="viewImage(this)">
+
+          </div>
+          <div class="column">
+            <img src="img/lightBox/photo5.jpg" id='image_3' onclick="viewImage(this)">
+            <img src="img/lightBox/photo4.jpg" id='image_6' onclick="viewImage(this)">
+            <img class="hidden artGColumn" id='image_9' src="img/lightBox/dust_work.jpg" onclick="viewImage(this)">
+            <img class="hidden artGColumn" id='image_12' src="img/lightBox/hexagon_work.jpg" onclick="viewImage(this)">
+            <img class="hidden artGColumn" id='image_15' src="img/lightBox/radio_work.jpg" onclick="viewImage(this)">
+
+          </div>
+        </div>
+
+
+      </div>
+      <div id="buttonViewGalery" class="has-text-centered">
+        <button id="showArtGallery" class="button">View more..</button>
+        <button id="hideArtGallery" class="hidden button">Hide Gallery</button>
       </div>
 
-    </div>
-
-    <div class="column"> <img src="./img/pattern.png" width="2000vw"alt="andrey pattern" /></div>
-
-  </div>
-    </div>
     </section>
-     <hr />
-<!--bottom navbar -->
+
+
+
+
+
+
+
+    <br />
+    <section id="tree_main" class="hero  is-bold">
+
+      <div class="hero-body">
+        <div class="container has-text-centered ">
+          <h1 class="title is-size-1" style="color:white">
+            And more info ...
+          </h1>
+          <h2 class="subtitle is-size-6">
+            And more info ...
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!--bottom  contact -->
+    <section>
+      <br />
+      <div class="container" id="myContacts">
+        <div class="columns">
+          <div class="column is-half">
+            <img src="./img/ab_logo.png" width="250vw" alt="ab_logo" />
+
+
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ,
+              aliquip ex ea commodo consequat.</p>
+            <br />
+            <span class="title is-5"> Contacts </span>
+            <div class="" style="margin-top: 3vw">
+              <span class="icon icons_in_bottom">
+                <i class="fab fa-facebook-f fa-3x"></i>
+              </span>
+              <span class="icon icons_in_bottom">
+                <i class="fas fa-envelope fa-3x"></i>
+              </span>
+              <span class="icon icons_in_bottom">
+                <i class="fab fa-twitter fa-3x"></i>
+              </span>
+              <span class="icon icons_in_bottom">
+                <i class="fab fa-linkedin-in fa-3x"></i>
+              </span>
+              <span class="icon icons_in_bottom"><a style="color:  #363636" href="https://github.com/andrewburw">
+                  <i class="fab fa-github-square fa-3x"></i></a>
+              </span>
+              <span class="icon icons_in_bottom">
+                <a style="color:  #363636" href="https://leetcode.com/dron8/">
+                  <figure class="image ">
+                    <img src="img/LeetCode_logo_black.png">
+                  </figure>
+                </a>
+              </span>
+            </div>
+
+          </div>
+
+          <div class="column"> <img src="./img/pattern.png" width="2000vw" alt="andrey pattern" /></div>
+
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!--bottom navbar -->
 
 
     <div id="navbarBasicExample" class="navbar">
@@ -578,22 +589,23 @@ executable. On a web server, the result of the interpreted and executed PHP code
         <a class="navbar-item" onclick="setPagePosition('#myContacts')">Contacts </a>
       </div>
     </div>
- <section class="test">
-   <div class="has-text-centered">
-     <h4>11</h4>
-   </div>
+    <section class="test">
+      <div class="has-text-centered">
+        <h4>11</h4>
+      </div>
 
- </section>
-</main>
+    </section>
+  </main>
 
 
-<script src="ablib.js"></script>
-<script src="content.js"></script>
+  <script src="ablib.js"></script>
+  <script src="content.js"></script>
   <script src="plugins/galery_modal.js"></script>
 
-    <script src="plugins/content_modal.js"></script>
-    <script src="plugins/messageForm.js"></script>
+  <script src="plugins/content_modal.js"></script>
+  <script src="plugins/messageForm.js"></script>
   <script src="main.js"></script>
 
-  </body>
+</body>
+
 </html>
