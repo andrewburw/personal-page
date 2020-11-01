@@ -170,7 +170,7 @@ const contentMySkilzz = {
   mySkilzz: {
       modalTitle: 'My Skillz',
       projectName: 'My Skillz Description',
-      projectDescription: 'TESTLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque',
+      projectDescription: 'This section describes my skills and their approximate level.',
       skilzData: {
         JavaScript: {
           precentage: 60,
@@ -200,7 +200,7 @@ const contentMySkilzz = {
         },
         NodeJS: {
           precentage: 40,
-          description: 'My main programming backend language.Need more practice.',
+          description: 'My main programming backend language.',
           color: 'is-success'
         },
         ReactJS: {
@@ -208,8 +208,13 @@ const contentMySkilzz = {
           description: 'My favorite UI framework.',
           color: 'is-info'
         },
-        Git: {
+        Php: {
           precentage: 10,
+          description: 'Small projects.',
+          color: 'is-success'
+        },
+        Git: {
+          precentage: 20,
           description: 'Need more practice to work in team and large projects.',
           color: 'is-black'
         },
@@ -237,8 +242,8 @@ const contentMySkilzz = {
         },
 
         Sql: {
-          precentage: 20,
-          description: 'Small application in the Libra Base',
+          precentage: 50,
+          description: 'Small applications.',
           color: 'is-link'
         }
         ,
@@ -249,6 +254,10 @@ const contentMySkilzz = {
         AdobeIllustrator: {
           precentage: 20,
           description: 'Small graphic illustrations.'
+        },
+         Figma: {
+          precentage: 80,
+          description: 'Figma => HTML/CSS.'
         }
       }
 
